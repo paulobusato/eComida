@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: #efefef;
+}
+
+body {
+  background-image: url("https://c.wallhere.com/photos/dc/8b/2560x1600_px_food_mushroom_Onions_Peppers_Spoon_Tomatoes_Wooden_Surface-827582.jpg!d");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 80%;
+  width: 80%;
+  background-color: #efefef;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.container .cadastro {
+  background-color: #356859;
+  /* background-color: #B9E4C9; */
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
