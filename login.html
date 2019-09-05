@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="login.css">
   <title>Login - eComida</title>
 </head>
 <body>
   <main class="container">
     <section class="cadastro">
+      <i class="material-icons">arrow_back</i>
       <h2>Bem-vindo novamente</h2>
       <p>Para realizar pedidos, faça o seu cadastro agora</p>
-      <a href="#">Cadastrar</a>
+      <a href="#" class="btnCadastrar">Cadastrar</a>
     </section>
     <section class="entrar">
       <h1>Entrar</h1>
@@ -22,5 +24,16 @@
       <button type="button">Entrar</button>
     </section>
   </main>
+  <script>
+      var cadastro = document.querySelector(".cadastro");
+      var entrar = document.querySelector(".entrar");
+      var btnCadastrar = document.querySelector(".btnCadastrar");
+    
+      btnCadastrar.addEventListener('click', function (event) {
+        cadastro.style.gridColumnStart = 1;
+        cadastro.style.gridColumnEnd = 3;
+        entrar.style.display = 'none';
+      });
+  </script>
 </body>
 </html>
