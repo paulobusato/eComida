@@ -28,6 +28,7 @@ body {
   border-radius: 1rem;
   display: grid;
   grid-template-columns: 30% 70%;
+  color: white;
 }
 
 .container .cadastro {
@@ -35,4 +36,90 @@ body {
   /* background-color: #B9E4C9; */
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .cadastro h2,
+.container .cadastro p,
+.container .cadastro a {
+  margin-top: 3rem;
+}
+
+.container .cadastro h2 {
+  font-size: 2em;
+}
+
+.container .cadastro p {
+  font-size: 1.1em;
+}
+
+
+.container .cadastro a {
+  height: 3rem;
+  width: 10rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  color: #356859;
+  text-decoration: none;
+  border: 1px solid #356859;
+}
+
+.container .cadastro a:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.entrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.entrar h1,
+.entrar input,
+.entrar button {
+  margin-top: 2rem;
+}
+
+.entrar h1 {
+  color: #356859;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+}
+
+.entrar input {
+  border: 1px solid #356859;
+  border-radius: .5rem;
+  padding: .5rem;
+  width: 17rem;
+  outline: none;
+}
+
+.entrar button {
+  height: 3rem;
+  width: 10rem;
+  background-color: #356859;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+}
+
+.entrar button:hover {
+  background-color: transparent;
+  color: #356859;
+  border: 1px solid #356859;
 }
