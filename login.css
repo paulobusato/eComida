@@ -34,9 +34,9 @@ body {
 .container .cadastro {
   position: relative;
   background-color: #356859;
-  /* background-color: #B9E4C9; */
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  /* border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem; */
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,12 +49,18 @@ body {
   margin-top: 3rem;
 }
 
-.container .cadastro i {
+.container .cadastro .btnVoltar {
   color: white;
   position: absolute;
   left: 1.5rem;
   top: 1.5rem;
   font-size: 2rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.container .cadastro .btnVoltar:hover {
+  border: none;
 }
 
 .container .cadastro h2 {
@@ -66,7 +72,7 @@ body {
 }
 
 
-.container .cadastro a {
+.container .cadastro .btnCadastrar {
   height: 3rem;
   width: 10rem;
   background-color: white;
@@ -83,6 +89,58 @@ body {
   background-color: transparent;
   color: white;
   border: 1px solid white;
+}
+
+
+.cadastro-formulario {
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cadastro-formulario h2 {
+  font-size: 20rem;
+  margin-bottom: 2rem;
+
+}
+
+.cadastro-formulario input {
+  margin-bottom: 1rem;
+  border: 1px solid #356859;
+  border-radius: .5rem;
+  padding: .5rem;
+  width: 17rem;
+  outline: none;
+}
+
+.cadastro-navegacao {
+  display: flex;
+  flex-direction: row;
+}
+
+.cadastro-formulario button {
+  height: 3rem;
+  width: 10rem;
+  background-color: #356859;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cadastro-formulario .btnCancelar {
+  margin-right: 1rem;
 }
 
 .entrar {

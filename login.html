@@ -12,10 +12,19 @@
 <body>
   <main class="container">
     <section class="cadastro">
-      <i class="material-icons">arrow_back</i>
-      <h2>Bem-vindo novamente</h2>
-      <p>Para realizar pedidos, faça o seu cadastro agora</p>
+      <a href="index.html" class="btnVoltar"><i class="material-icons">arrow_back</i></a>
+      <h2 class="cadastro-titulo">Bem-vindo novamente</h2>
+      <p class="cadastro-subtitulo">Para realizar pedidos, faça o seu cadastro agora</p>
       <a href="#" class="btnCadastrar">Cadastrar</a>
+      <form action="" class="cadastro-formulario">
+        <h2>Cadastro</h2>
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Sobrenome">
+        <section class="cadastro-navegacao">
+          <button type="button" class="btnCancelar">Cancelar</button>
+          <button type="button">Confirmar</button>
+        </section>
+      </form>
     </section>
     <section class="entrar">
       <h1>Entrar</h1>
@@ -25,15 +34,37 @@
     </section>
   </main>
   <script>
-      var cadastro = document.querySelector(".cadastro");
-      var entrar = document.querySelector(".entrar");
-      var btnCadastrar = document.querySelector(".btnCadastrar");
-    
-      btnCadastrar.addEventListener('click', function (event) {
-        cadastro.style.gridColumnStart = 1;
-        cadastro.style.gridColumnEnd = 3;
-        entrar.style.display = 'none';
-      });
+    var entrar = document.querySelector(".entrar");
+    var cadastro = document.querySelector(".cadastro");
+    var btnVoltar = document.querySelector('.btnVoltar');
+    var titulo = document.querySelector('.cadastro-titulo');
+    var subtitulo = document.querySelector('.cadastro-subtitulo');
+    var btnCadastrar = document.querySelector(".btnCadastrar");
+    var container = document.querySelector('.container');
+    var cadastroNavegacao = document.querySelector('.cadastro-formulario');
+    var btnCancelar = document.querySelector('.btnCancelar');
+
+    btnCadastrar.addEventListener('click', function (event) {
+      cadastro.style.gridColumnStart = 1;
+      cadastro.style.gridColumnEnd = 3;
+      entrar.style.display = 'none';
+      titulo.style.display = 'none';
+      subtitulo.style.display = 'none';
+      btnCadastrar.style.display = 'none';
+      btnVoltar.style.display = 'none'; 
+      cadastroNavegacao.style.display = 'flex';
+    });
+
+    btnCancelar.addEventListener('click', function (event) {
+      cadastro.style.gridColumnStart = 1;
+      cadastro.style.gridColumnEnd = 1;
+      entrar.style.display = 'flex';
+      titulo.style.display = 'block';
+      subtitulo.style.display = 'block';
+      btnCadastrar.style.display = 'flex';
+      btnVoltar.style.display = 'inline'; 
+      cadastroNavegacao.style.display = 'none';
+    }); 
   </script>
 </body>
 </html>
