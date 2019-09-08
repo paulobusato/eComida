@@ -29,27 +29,29 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   color: white;
+  animation-name: entrada-container;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
-.container .cadastro {
+.cadastro {
   position: relative;
   background-color: #356859;
-  /* border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem; */
-  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.container .cadastro h2,
-.container .cadastro p,
-.container .cadastro a {
+.cadastro > h2,
+.cadastro > p,
+.cadastro > a {
   margin-top: 3rem;
 }
 
-.container .cadastro .btnVoltar {
+.cadastro .btnVoltar {
   color: white;
   position: absolute;
   left: 1.5rem;
@@ -59,20 +61,20 @@ body {
   margin: 0;
 }
 
-.container .cadastro .btnVoltar:hover {
+.cadastro .btnVoltar:hover {
   border: none;
 }
 
-.container .cadastro h2 {
+.cadastro > h2 {
   font-size: 2em;
 }
 
-.container .cadastro p {
+.cadastro p {
   font-size: 1.1em;
 }
 
 
-.container .cadastro .btnCadastrar {
+.cadastro .btnCadastrar {
   height: 3rem;
   width: 10rem;
   background-color: white;
@@ -85,7 +87,7 @@ body {
   border: 1px solid #356859;
 }
 
-.container .cadastro a:hover {
+.cadastro a:hover {
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -104,13 +106,13 @@ body {
 }
 
 .cadastro-formulario h2 {
-  font-size: 20rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
 
 }
 
 .cadastro-formulario input {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   border: 1px solid #356859;
   border-radius: .5rem;
   padding: .5rem;
@@ -118,12 +120,20 @@ body {
   outline: none;
 }
 
+.primeiro-bloco, .segundo-bloco {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .cadastro-navegacao {
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
 }
 
-.cadastro-formulario button {
+.cadastro-formulario button, .cadastro-formulario a {
   height: 3rem;
   width: 10rem;
   background-color: #356859;
@@ -189,4 +199,36 @@ body {
   background-color: transparent;
   color: #356859;
   border: 1px solid #356859;
+}
+
+@keyframes entrada-container {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }

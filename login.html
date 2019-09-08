@@ -10,7 +10,7 @@
   <title>Login - eComida</title>
 </head>
 <body>
-  <main class="container">
+  <main class="container animated bounceInLeft">
     <section class="cadastro">
       <a href="index.html" class="btnVoltar"><i class="material-icons">arrow_back</i></a>
       <h2 class="cadastro-titulo">Bem-vindo novamente</h2>
@@ -18,11 +18,24 @@
       <a href="#" class="btnCadastrar">Cadastrar</a>
       <form action="" class="cadastro-formulario">
         <h2>Cadastro</h2>
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="Sobrenome">
+        <address>
+          <section class="primeiro-bloco">
+            <h3>Pessoal</h3>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Sobrenome">
+            <input type="tel" placeholder="Telefone">
+          </section>
+          <section class="segundo-bloco">
+            <h3>Endereço de entrega</h3>
+            <input type="text" placeholder="Logradouro">
+            <input type="text" placeholder="Numero">
+            <input type="text" placeholder="Bairro">
+            <input type="text" placeholder="Cidade">
+          </section>
+        </address>
         <section class="cadastro-navegacao">
           <button type="button" class="btnCancelar">Cancelar</button>
-          <button type="button">Confirmar</button>
+          <button type="button" class="btnConfirmar">Confirmar</button>
         </section>
       </form>
     </section>
@@ -30,23 +43,30 @@
       <h1>Entrar</h1>
       <input type="text" name="usuario" id="usuario" placeholder="Usuário">
       <input type="password" name="senha" id="senha" placeholder="Senha">
-      <button type="button">Entrar</button>
+      <button type="button" class="btnEntrar">Entrar</button>
     </section>
   </main>
   <script>
-    var entrar = document.querySelector(".entrar");
-    var cadastro = document.querySelector(".cadastro");
-    var btnVoltar = document.querySelector('.btnVoltar');
-    var titulo = document.querySelector('.cadastro-titulo');
-    var subtitulo = document.querySelector('.cadastro-subtitulo');
-    var btnCadastrar = document.querySelector(".btnCadastrar");
-    var container = document.querySelector('.container');
-    var cadastroNavegacao = document.querySelector('.cadastro-formulario');
-    var btnCancelar = document.querySelector('.btnCancelar');
+    const $ = (seletor, container) => (document || container).querySelector(seletor);
 
-    btnCadastrar.addEventListener('click', function (event) {
+    const entrar = $(".entrar");
+    const cadastro = $(".cadastro");
+    const btnVoltar = $('.btnVoltar');
+    const titulo = $('.cadastro-titulo');
+    const subtitulo = $('.cadastro-subtitulo');
+    const btnCadastrar = $(".btnCadastrar");
+    const container = $('.container');
+    const cadastroNavegacao = $('.cadastro-formulario');
+    const btnCancelar = $('.btnCancelar');
+    const btnConfirmar = $('.btnConfirmar');
+    const btnEntrar = $('.btnEntrar');
+    const telefone = $('input[type=tel]');
+
+    btnCadastrar.addEventListener('click', event => {
       cadastro.style.gridColumnStart = 1;
       cadastro.style.gridColumnEnd = 3;
+      cadastro.style.borderTopRightRadius = '1rem';
+      cadastro.style.borderBottomRightRadius = '1rem';
       entrar.style.display = 'none';
       titulo.style.display = 'none';
       subtitulo.style.display = 'none';
@@ -55,7 +75,7 @@
       cadastroNavegacao.style.display = 'flex';
     });
 
-    btnCancelar.addEventListener('click', function (event) {
+    btnCancelar.addEventListener('click', event => {
       cadastro.style.gridColumnStart = 1;
       cadastro.style.gridColumnEnd = 1;
       entrar.style.display = 'flex';
@@ -64,7 +84,15 @@
       btnCadastrar.style.display = 'flex';
       btnVoltar.style.display = 'inline'; 
       cadastroNavegacao.style.display = 'none';
-    }); 
+    });
+
+    btnConfirmar.addEventListener('click', event => {
+      window.location.pathname = '/eComida/index.html';
+    });
+
+    btnEntrar.addEventListener('click', event => {
+      window.location.pathname = '/eComida/index.html';
+    });    
   </script>
 </body>
 </html>
