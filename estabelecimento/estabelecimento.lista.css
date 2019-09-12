@@ -54,10 +54,12 @@ html, body {
 }
 
 .estabelecimento-list__item {
+    display: inline-block;
     background-color: white;
     position: relative;
     height: 100%;
     width: 270px;
+    margin: 0 1rem;
 }
 
 .estabelecimento__imagem {
@@ -72,8 +74,26 @@ html, body {
     text-decoration: none;
 }
 
-.estabelecimento__nome {
+.estabelecimento__nome,
+.estabelecimento__distancia,
+.estabelecimento__tempo-entrega {
     color: #356859;
     font-weight: bold;
     width: 100%;
+    margin-top: .5rem;
+    margin-left: 0.3rem;
+    word-spacing: 0.1rem;
+}
+
+.estabelecimento__rating {
+    position: absolute;
+    bottom: 4.5rem;
+    right: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.estabelecimento__rating_label,
+.estabelecimento__rating_icon {
+    color: #e7a74e;
 }
