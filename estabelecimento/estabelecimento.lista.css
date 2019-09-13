@@ -19,20 +19,20 @@ html, body {
 }
 
 .cabecalho__navegacao {
-    height: 3rem;
+    height: 4rem;
     background-color: #356859;
     margin-bottom: 3rem;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 10%;
 
 }
 
-.cabecalho__link {
+.cabecalho__logo {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .cabecalho__titulo {
