@@ -18,39 +18,41 @@ html, body {
     font-family: 'Lekton', sans-serif;
 */
 
-.navegacao-principal {
-    height: 3rem;
-    background-color: #356859;
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 2rem;
-
-}
-
-.navegacao-principal .navegacao-entrar {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
 .cabecalho-principal {
     min-height: 5vh;
     font-family: 'Montserrat', sans-serif;
+    margin: 0 10%;
     margin-bottom: 3rem;
 }
 
-.cabecalho-principal h1 {
+.cabecalho-principal__navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-principal__navegacao__titulo {
     color: #356859;
     text-decoration: none;
     font-weight: bold;
     font-size: 4em;
-    margin: 0 10%;
 }
 
-.cabecalho-principal hr {
-    margin: 2% 10%;   
+.cabecalho-principal__navegacao__entrar {
+    color: #356859;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 140px;
+    height: 50px;
+    font-size: 1rem;
+    border: 1px solid #dcdcdc;
+    color: #356859;
+    padding: 2px;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .conteudo-principal {
