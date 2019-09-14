@@ -30,6 +30,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
       <article class="destaque__card">
@@ -40,6 +41,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
       <article class="destaque__card">
@@ -50,6 +52,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
       <article class="destaque__card">
@@ -60,6 +63,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
     </section>
@@ -75,6 +79,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
       <article class="destaque__card">
@@ -85,6 +90,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
       <article class="destaque__card">
@@ -95,6 +101,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
       <article class="destaque__card">
@@ -105,6 +112,7 @@
           <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
           <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
           <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
         </section>
       </article>
     </section>
@@ -113,6 +121,34 @@
     <span class="copyright">2019 &copy; Todos os direitos reservados</span>
     <span>Buzato Tecnologia</span>
   </footer>
-  <div id="background"></div>
+  <div id="background">
+    <main class="ingredientes-lista">
+
+    </main>
+  </div>
+  <script>
+    var background = document.querySelector('#background');
+    var addButton = document.querySelectorAll('.destaque__icon');
+    var body = document.querySelector('body');
+    var ingredientesLista = document.querySelector('.ingredientes-lista');
+
+    addButton.forEach((button) => {
+      button.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        background.classList.add('background');
+        body.style.overflow = 'hidden';
+
+        ingredientesLista.classList.remove('run-animation');
+        void ingredientesLista.offsetWidth;
+        ingredientesLista.classList.add('run-animation');
+      }, false);
+    });
+
+    background.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      background.classList.remove('background');
+      body.style.overflow = 'block';
+    });
+  </script>
 </body>
 </html>
