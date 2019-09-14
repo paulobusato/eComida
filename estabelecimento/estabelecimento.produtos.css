@@ -104,6 +104,18 @@ html, body {
     color: #356859;
 }
 
+.rodape {
+    height: 3rem;
+    margin-top: 5rem;
+    background-color: #356859;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
 .background {
     opacity: 1;
     transition: opacity 150ms ease-in-out;
