@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,500,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    /* background-color: #efefef; */
+}
+
+.cabecalho {
+    min-height: 5vh;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.cabecalho__navegacao {
+    height: 4rem;
+    background-color: #356859;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.cabecalho__logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.cabecalho__titulo {
+    color: #356859;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 4em;
+    margin: 0 10%;
+}
+
+.cabecalho__divider {
+    margin: 2% 10%;   
+}
+
+.destaque {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 290px);
+  grid-template-rows: 3rem 336px;
+  gap: 28px;
+  margin-bottom: 3rem;
+}
+
+.destaque__titulo-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.destaque__titulo {
+    color: #3f3e3e;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-size: 2em;
+    height: 100%;
+}
+
+.destaque__card {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+}
+
+.destaque__img {
+    height: 100%;
+    width: 100%;
+}
+
+.destaque__descricao {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+}
+
+.destaque__descricao--principal {
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+.destaque__descricao--secundario {
+    color: #717171;
+}
+
+.destaque__preco {
+    color: #356859;
+}
+
+.background {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+    background-color: rgba(113, 113, 113, 0.9);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
