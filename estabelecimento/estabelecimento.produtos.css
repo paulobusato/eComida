@@ -115,6 +115,7 @@ html, body {
     outline: none;
     border: none;
     cursor: pointer;
+    line-height: 0;
 }
 
 .rodape {
@@ -145,17 +146,22 @@ html, body {
     transition: all .5s;
 }
 
-.ingredientes-lista {
+.pedido {
     background-color: #efefef;
     height: 80%;
     width: 30%;
     border-radius: 1rem;
+    z-index: 100000;
 }
 
 .run-animation {
     animation-name: slidein;
-    animation-duration: .7s;
+    animation-duration: 0.7s;
 }
+
+.display--hidden {
+    display: hidden;
+} 
 
 @keyframes slidein {
     from {

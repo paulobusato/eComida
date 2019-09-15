@@ -122,32 +122,38 @@
     <span>Buzato Tecnologia</span>
   </footer>
   <div id="background">
-    <main class="ingredientes-lista">
+    <main class="pedido run-animation">
+      <header class="pedido-header">
+        <h3 class="pedido-header__titulo">
 
+        </h3>
+      </header>
     </main>
   </div>
   <script>
     var background = document.querySelector('#background');
     var addButton = document.querySelectorAll('.destaque__icon');
     var body = document.querySelector('body');
-    var ingredientesLista = document.querySelector('.ingredientes-lista');
+    var pedido = document.querySelector('.pedido');
 
     addButton.forEach((button) => {
-      button.addEventListener('click', (ev) => {
-        ev.preventDefault();
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
         background.classList.add('background');
-        body.style.overflow = 'hidden';
+        body.classList.add('display--hidden');
 
-        ingredientesLista.classList.remove('run-animation');
-        void ingredientesLista.offsetWidth;
-        ingredientesLista.classList.add('run-animation');
+        pedido.classList.remove('run-animation');
+        void pedido.offsetWidth;
+        pedido.classList.add('run-animation');
       }, false);
     });
 
-    background.addEventListener('click', (ev) => {
-      ev.preventDefault();
+    background.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (e.target.id !== 'background') return;
+
       background.classList.remove('background');
-      body.style.overflow = 'block';
+      body.classList.remove('display--hidden');
     });
   </script>
 </body>
