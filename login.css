@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lekton:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -28,7 +30,7 @@ body {
   border-radius: 1rem;
   display: grid;
   grid-template-columns: 30% 70%;
-  color: white;
+  color: #000000;
   animation-name: entrada-container;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -36,7 +38,7 @@ body {
 
 .cadastro {
   position: relative;
-  background-color: #356859;
+  background-color: #4caf50;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   display: flex;
@@ -52,7 +54,7 @@ body {
 }
 
 .cadastro .btnVoltar {
-  color: white;
+  color: #000000;
   position: absolute;
   left: 1.5rem;
   top: 1.5rem;
@@ -77,14 +79,13 @@ body {
 .cadastro .btnCadastrar {
   height: 3rem;
   width: 10rem;
-  background-color: white;
+  background-color: #087f23;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
-  color: #356859;
+  color: #000000;
   text-decoration: none;
-  border: 1px solid #356859;
 }
 
 .cadastro a:hover {
@@ -113,7 +114,7 @@ body {
 
 .cadastro-formulario input {
   margin-top: 1rem;
-  border: 1px solid #356859;
+  border: 1px solid #087f23;
   border-radius: .5rem;
   padding: .5rem;
   width: 17rem;
@@ -136,15 +137,15 @@ body {
 .cadastro-formulario button, .cadastro-formulario a {
   height: 3rem;
   width: 10rem;
-  background-color: #356859;
+  background-color: #087f23;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
-  color: white;
+  color: #000000;
   text-decoration: none;
-  border: 1px solid white;
   outline: none;
+  border: 1px solid #087f23;
   cursor: pointer;
   margin-top: 1rem;
 }
@@ -167,13 +168,13 @@ body {
 }
 
 .entrar h1 {
-  color: #356859;
+  color: #087f23;
   font-size: 3rem;
   letter-spacing: .2rem;
 }
 
 .entrar input {
-  border: 1px solid #356859;
+  border: 1px solid #087f23;
   border-radius: .5rem;
   padding: .5rem;
   width: 17rem;
@@ -183,22 +184,22 @@ body {
 .entrar button {
   height: 3rem;
   width: 10rem;
-  background-color: #356859;
+  background-color: #087f23;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
-  color: white;
+  color: #000000;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid #087f23;
   outline: none;
   cursor: pointer;
 }
 
 .entrar button:hover {
   background-color: transparent;
-  color: #356859;
-  border: 1px solid #356859;
+  color: #087f23;
+  border: 1px solid #087f23;
 }
 
 @keyframes entrada-container {

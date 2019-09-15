@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lekton:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -12,7 +14,7 @@ html, body {
 }
 
 body {
-    background-color: #efefef;
+    /* background-color: #efefef; */
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% auto 5%;
@@ -20,14 +22,13 @@ body {
 }
 
 .cabecalho {
-    font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 30% auto;
 }
 
 .cabecalho__navegacao {
-    background-color: #356859;
+    background-color: #087f23;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -35,14 +36,14 @@ body {
 }
 
 .cabecalho__logo {
-    color: white;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 2em;
 }
 
 .cabecalho__titulo {
-    color: #356859;
+    color: #4caf50;
     text-decoration: none;
     font-weight: bold;
     font-size: 4em;
@@ -82,7 +83,7 @@ body {
 .estabelecimento__nome,
 .estabelecimento__distancia,
 .estabelecimento__tempo-entrega {
-    color: #356859;
+    color: #087f23;
     font-weight: bold;
     width: 100%;
     margin-top: .5rem;
@@ -104,11 +105,11 @@ body {
 }
 
 .rodape {
-    background-color: #356859;
+    background-color: #087f23;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #000000;
     padding: 0 1rem;
     font-size: 1.1rem;
 }
