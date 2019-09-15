@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -20,7 +22,7 @@ html, body {
 
 .cabecalho__navegacao {
     height: 4rem;
-    background-color: #356859;
+    background-color: #4caf50;
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
@@ -29,14 +31,14 @@ html, body {
 }
 
 .cabecalho__logo {
-    color: white;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 2em;
 }
 
 .cabecalho__titulo {
-    color: #356859;
+    color: #4caf50;
     text-decoration: none;
     font-weight: bold;
     font-size: 4em;
@@ -62,7 +64,7 @@ html, body {
 }
 
 .destaque__titulo {
-    color: #3f3e3e;
+    color: #000000;
     letter-spacing: -1px;
     font-weight: 500;
     font-size: 2em;
@@ -97,19 +99,19 @@ html, body {
 }
 
 .destaque__descricao--secundario {
-    color: #717171;
+    color: #000000;
 }
 
 .destaque__preco {
-    color: #356859;
+    color: #4caf50;
 }
 
 .destaque__icon {
     position: absolute;
     bottom: .5rem;
     right: .5rem;
-    color: white;
-    background-color: #356859;
+    color: #000000;
+    background-color: #4caf50;
     border-radius: 50%;
     padding: .3rem;
     outline: none;
@@ -121,11 +123,11 @@ html, body {
 .rodape {
     height: 3rem;
     margin-top: 5rem;
-    background-color: #356859;
+    background-color: #4caf50;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #000000;
     padding: 0 1rem;
     font-size: 1.1rem;
 }
@@ -149,9 +151,94 @@ html, body {
 .pedido {
     background-color: #efefef;
     height: 80%;
-    width: 30%;
-    border-radius: 1rem;
+    width: 20%;
     z-index: 100000;
+}
+
+.pedido__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2rem;
+    height: 7rem;
+    background-color: #087f23;
+}
+
+.ingrediente-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #4caf50;
+    color: #000000;
+}
+
+.ingrediente-header__titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingrediente-header__obrigatorio {
+    align-self: center;
+    background-color: #717171;
+    padding: .5rem;
+    border-radius: 4px;
+    color: #efefef;
+    text-transform: capitalize;
+}
+
+.ingrediente-individual {
+    background-color: #80e27e;
+    color: #000000;
+    font-size: 1rem;
+    position: relative;
+    height: 4rem;
+}
+
+.ingrediente-individual__descricao {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.ingrediente-individual__descricao::before,
+.ingrediente-individual__descricao::after {
+    position: absolute;
+    top: 20px;
+    right: 63px;
+}
+
+.ingrediente-individual__descricao::before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+
+.ingrediente-individual__descricao::after {
+    content: '';
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: #4caf50;
+}
+
+.ingrediente-individual__checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.ingrediente-individual__checkbox + .ingrediente-individual__descricao::after {
+    content: none;
+}
+
+#item1:checked + .ingrediente-individual__descricao {
+    color: red;
 }
 
 .run-animation {
@@ -161,7 +248,11 @@ html, body {
 
 .display--hidden {
     display: hidden;
-} 
+}
+
+.display--none {
+    display: none;
+}
 
 @keyframes slidein {
     from {

@@ -121,13 +121,51 @@
     <span class="copyright">2019 &copy; Todos os direitos reservados</span>
     <span>Buzato Tecnologia</span>
   </footer>
-  <div id="background">
+  <div id="background" class="display--none">
     <main class="pedido run-animation">
-      <header class="pedido-header">
-        <h3 class="pedido-header__titulo">
-
-        </h3>
+      <header class="pedido__header">
+        <h3 class="pedido__titulo">Marmitex churrasco 500g, coca cola 1,5l</h3>
+        <p class="pedido__preco">R$ 39,10</p>
       </header>
+      <section class="ingrediente-lista">
+        <article class="ingrediente">
+          <header class="ingrediente-header">
+            <p class="ingrediente-header__titulo">
+              <span>Escolha sua carne</span>
+              <span>Escolha <b>2</b> opção.</span>
+            </p>
+            <span class="ingrediente-header__obrigatorio">obrigatório</span>
+          </header>
+          <main class="ingrediente-individual-lista">
+            <article class="ingrediente-individual">
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="item1" id="item1">
+              <label for="item1" class="ingrediente-individual__descricao">Lombo de porco</label>
+            </article>
+            <article class="ingrediente-individual">
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item2">
+              <label for="item2" class="ingrediente-individual__descricao">Linguiça de churrasco</label>
+            </article>
+            <article class="ingrediente-individual">
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item3">
+              <label for="item3" class="ingrediente-individual__descricao">Carne de boi</label>
+            </article>
+          </main>
+        </article>
+        <article class="ingrediente">
+          <header class="ingrediente-header">
+            <p class="ingrediente-header__titulo">
+              <span>Escolha sua carne</span>
+              <span>Escolha <b>1</b> opção.</span>
+            </p>
+          </header>
+          <main class="ingrediente-individual-lista">
+            <article class="ingrediente-individual">
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item4">
+              <label for="item4" class="ingrediente-individual__descricao">Lombo de porco</label>
+            </article>
+          </main>
+        </article>
+      </section>
     </main>
   </div>
   <script>
@@ -140,6 +178,7 @@
       button.addEventListener('click', (e) => {
         e.preventDefault();
         background.classList.add('background');
+        background.classList.remove('display--none');
         body.classList.add('display--hidden');
 
         pedido.classList.remove('run-animation');
@@ -151,8 +190,8 @@
     background.addEventListener('click', (e) => {
       e.preventDefault();
       if (e.target.id !== 'background') return;
-
       background.classList.remove('background');
+      background.classList.add('display--none');
       body.classList.remove('display--hidden');
     });
   </script>
