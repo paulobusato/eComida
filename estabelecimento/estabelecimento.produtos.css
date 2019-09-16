@@ -31,13 +31,14 @@ html, body {
 }
 
 .cabecalho__logo {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 2em;
 }
 
 .sacola-button {
+    color: #fff;
     width: 2rem;
     height: 2rem;
     background: transparent;
