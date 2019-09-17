@@ -72,14 +72,14 @@ html, body {
     text-align: center;
 }
 
-.conteudo-principal .categorias .categorias-itens {
+.categorias__container {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.conteudo-principal .categorias .categorias-itens article {
+.categorias__item {
     position: relative;
     height: 250px;
     width: 300px;
@@ -91,11 +91,11 @@ html, body {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
 }
 
-.conteudo-principal .categorias .categorias-itens article:hover {
+.categorias__item:hover {
     box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, .12)
 }
 
-.conteudo-principal .categorias .categorias-itens img {
+.categorias__img {
     position: absolute;
     height: 80%;
     width: 100%;
@@ -103,7 +103,7 @@ html, body {
     border-top-right-radius: 16px;
 }
 
-.conteudo-principal .categorias .categorias-itens p {
+.categorias__descricao {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -117,13 +117,13 @@ html, body {
     margin-bottom: 3rem;
 }
 
-.recomendacoes-itens {
+.recomendacoes__container {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
 }
 
-.recomendacoes-itens .item {
+.recomendacoes__item {
     position: relative;
     width: 300px;
     height: 300px;
@@ -135,11 +135,11 @@ html, body {
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
 }
 
-.recomendacoes-itens .item:hover {
+.recomendacoes__item:hover {
     box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, .12);
 }
 
-.recomendacoes-itens .item img {
+.recomendacoes__img {
     position: absolute;
     height: 85%;
     width: 100%;
@@ -147,7 +147,7 @@ html, body {
     border-top-right-radius: 16px;
 }
 
-.recomendacoes-itens .item p {
+.recomendacoes__descricao {
     position: absolute;
     bottom: 0;
     width: 100%;
