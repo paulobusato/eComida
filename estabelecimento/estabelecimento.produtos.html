@@ -14,7 +14,7 @@
     <nav class="cabecalho__navegacao">
       <a class="cabecalho__logo" href="/index.html">eComida</a>
       <button class="sacola-button"><i class="material-icons sacola-button__icon">shopping_cart</i></button>
-      <section class="sacola-container">
+      <section class="sacola-container display--none">
         <p class="sacola__texto">Seu pedido em</p>
         <h3 class="sacola__estabelecimento">Number One Chicken</h3>
         <hr class="sacola__divider">
@@ -222,6 +222,9 @@
     var addButton = document.querySelectorAll('.destaque__icon');
     var body = document.querySelector('body');
     var pedido = document.querySelector('.pedido');
+    var sacolaButton = document.querySelector('.sacola-button');
+    var sacolaContainer = document.querySelector('.sacola-container');
+
 
     addButton.forEach((button) => {
       button.addEventListener('click', (e) => {
@@ -242,6 +245,10 @@
       background.classList.remove('background');
       background.classList.add('display--none');
       body.classList.remove('display--hidden');
+    });
+
+    sacolaButton.addEventListener('click', e => {
+      sacolaContainer.classList.toggle('display--none');
     });
   </script>
 </body>
