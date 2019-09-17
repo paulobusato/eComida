@@ -382,7 +382,8 @@ html, body {
 }
 
 .display--hidden {
-    display: hidden;
+    /* display: hidden; */
+    overflow: hidden;
 }
 
 .display--none {
