@@ -1,4 +1,0 @@
-# eComida
-Projeto Integrador - IFES
-
-...
