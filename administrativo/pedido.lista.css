@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* color: #087f23;
+color: #4caf50;
+color: #80e27e;
+color: #000000; */
+
+.cabecalho {
+    background-color: #4caf50;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
