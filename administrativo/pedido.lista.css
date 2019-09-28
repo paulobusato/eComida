@@ -69,6 +69,8 @@ body {
     /* border-radius: 1rem; */
     font-size: 1.2em;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
 }
 
 .navegacao__item:hover {
@@ -100,7 +102,14 @@ body {
 .pedido__itens {
     display: block;
     overflow: auto;
-    
+}
+
+.pedido__itens::-webkit-scrollbar {
+    width: 3px;
+}
+
+.pedido__itens::-webkit-scrollbar-thumb {
+    background-color: #cecece;
 }
 
 .pedido__item {
@@ -111,6 +120,10 @@ body {
     display: grid;
     grid-template-columns: 5fr 5fr repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+}
+
+.pedido__item:hover {
+    background-color: #cecece65;
 }
 
 .pedido__endereco {

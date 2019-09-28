@@ -66,9 +66,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 1rem; */
     font-size: 1.2em;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
 }
 
 .navegacao__item:hover {
