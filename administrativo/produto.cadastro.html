@@ -22,6 +22,74 @@
         </nav>
     </aside>
     <main class="conteudo-principal">
+        <h1 class="conteudo-principal__titulo">Cadastro de Produto</h1>
+        <hr class="conteudo-principal__divider">
+        <form action="#" class="formulario">
+            <section class="formulario-produto">
+                <h1>Produto</h1>
+                <article class="formulario-produto__item">
+                    <label for="formulario-produto__codigo">Código</label>
+                    <input type="number" class="formulario-produto__codigo" id="formulario-produto__codigo" disabled>
+                </article>
+                <article class="formulario-produto__item">
+                    <label for="formulario-produto__descricao">Descrição</label>
+                    <input type="text" class="formulario-produto__descricao">
+                </article>
+                <article class="formulario-produto__item">    
+                    <label for="formulario-produto__valor">Valor</label>
+                    <input type="number" class="formulario-produto__valor">
+                </article>
+            </section>
+            <section class="formulario-composicao">
+                <h1>Composição</h1>
+                <article class="formulario-composicao__item">
+                    <label for="formulario-composicao__codigo">Código</label>
+                    <input type="number" class="formulario-composicao__codigo" id="formulario-composicao__codigo" disabled>
+                </article>
+                <article class="formulario-composicao__item">
+                    <label for="formulario-composicao__descricao">Descrição</label>
+                    <input type="text" class="formulario-composicao__descricao">
+                </article>
+                <section class="formulario-composicao__opcoes">
+                    <h3>Opções</h3>
+                    <article class="formulario-composicao__item">
+                        <label for="formulario-composicao__descricao">Descrição</label>
+                        <input type="text" class="formulario-composicao__descricao">
+                    </article>
+                    <article class="formulario-composicao__item">
+                        <label for="formulario-composicao__descricao">Quantidade</label>
+                        <input type="text" class="formulario-composicao__descricao">
+                    </article>
+                    <article class="formulario-composicao__item">
+                        <label for="formulario-composicao__descricao">Valor</label>
+                        <input type="text" class="formulario-composicao__descricao">
+                    </article>
+                </section>
+            </section>
+            <div class="composicao-divider-wrapper">
+                <hr class="composicao__divider">
+            </div>
+            <section class="composicao__itens">
+                <article class="composicao__item">
+                    <span class="composicao__descricao">Descrição</span>
+                    <span class="composicao__valor">Valor</span>
+                    <span class="composicao__quantidade">Quantidade</span>
+                    <span class="composicao__btn-excluir">Excluir</span>
+                </article>
+                <article class="composicao__item">
+                    <span class="composicao__descricao">Morango</span>
+                    <span class="composicao__valor">R$ 20.30</span>
+                    <span class="composicao__quantidade">2</span>
+                    <i class="material-icons composicao__btn-excluir">clear</i>
+                </article>
+                <article class="composicao__item">
+                    <span class="composicao__descricao">Chocolate</span>
+                    <span class="composicao__valor">R$ 7.30</span>
+                    <span class="composicao__quantidade">3</span>
+                    <i class="material-icons composicao__btn-excluir">clear</i>
+                </article>
+            </section>
+        </form>
     </main>
 </body>
 </html>
