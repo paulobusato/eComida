@@ -17,7 +17,6 @@
         <nav class="navegacao">
             <a href="pedido.lista.html" class="navegacao__item">Pedidos</a>
             <a href="produto.cadastro.html" class="navegacao__item">Produtos</a>
-            <a href="ingrediente.cadastro.html" class="navegacao__item">Ingredientes</a>
             <a href="estabelecimento.cadastro.html" class="navegacao__item">Estabelecimento</a>
         </nav>
     </aside>
@@ -43,22 +42,18 @@
             <section class="formulario-composicao">
                 <h1>Composição</h1>
                 <article class="formulario-composicao__item">
-                    <label for="composicaoCodigo">Código</label>
-                    <input type="number" class="formulario-composicao__codigo" id="composicaoCodigo" disabled>
-                </article>
-                <article class="formulario-composicao__item">
                     <label for="composicaoDescricao">Descrição</label>
                     <input type="text" class="formulario-composicao__descricao" id="composicaoDescricao">
+                </article>
+                <article class="formulario-composicao__item">
+                    <label for="composicaoQuantidade">Quantidade Máxima</label>
+                    <input type="number" class="formulario-composicao__quantidade" id="composicaoQuantidade">
                 </article>
                 <section class="formulario-composicao__opcoes">
                     <h3 class="opcoes__titulo">Opções</h3>
                     <article class="opcoes__item opcoes__descricao--wrapper">
                         <label>Descrição</label>
                         <input type="text" class="opcoes__descricao">
-                    </article>
-                    <article class="opcoes__item opcoes__quantidade--wrapper">
-                        <label>Quantidade</label>
-                        <input type="number" class="opcoes__quantidade">
                     </article>
                     <article class="opcoes__item opcoes__valor--wrapper">
                         <label>Valor</label>
@@ -73,23 +68,24 @@
                 <article class="composicao__item">
                     <span class="composicao__descricao">Descrição</span>
                     <span class="composicao__valor">Valor</span>
-                    <span class="composicao__quantidade">Quantidade</span>
                     <span class="composicao__btn-excluir">Excluir</span>
                 </article>
                 <article class="composicao__item">
                     <span class="composicao__descricao">Morango</span>
                     <span class="composicao__valor">R$ 20.30</span>
-                    <span class="composicao__quantidade">2</span>
                     <i class="material-icons composicao__btn-excluir">clear</i>
                 </article>
                 <article class="composicao__item">
                     <span class="composicao__descricao">Chocolate</span>
                     <span class="composicao__valor">R$ 7.30</span>
-                    <span class="composicao__quantidade">3</span>
                     <i class="material-icons composicao__btn-excluir">clear</i>
                 </article>
             </section>
         </form>
     </main>
+    <footer class="rodape">
+        <span class="copyright">2019 &copy; Todos os direitos reservados</span>
+        <span>Buzato Tecnologia</span>
+    </footer>
 </body>
 </html>

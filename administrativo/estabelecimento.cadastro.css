@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* color: #087f23;
+color: #4caf50;
+color: #80e27e;
+color: #000000; */
+
+body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10% 85% 5%;
+}
+
+.cabecalho {
+    grid-column: 1 / 3;
+    background-color: #4caf50;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3em;
+    padding-left: 2rem;
+}
+
+.navegacao-container {
+    width: 100%;
+    height: 100%;
+    background-color: #087f23;
+    opacity: .5;
+}
+
+.navegacao {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 5%) 80%;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid #087f23;
+    gap: 1rem;
+    padding: 16px;
+}
+
+.navegacao__item {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navegacao__item:hover {
+    font-weight: bold;
+}
+
+.conteudo-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 10px auto;
+}
+
+.conteudo-principal__titulo {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal__divider {
+    grid-column: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+.formulario {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 320px 50px;
+    padding: 64px 300px;
+    gap: 24px;
+}
+
+.formulario__section {
+    display: grid;
+    grid-auto-rows: 50px;
+    gap: 16px;
+}
+
+.formulario__item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.formulario__input {
+    padding: 6px;
+    border: 1px solid #087f23;
+    color: #000000;
+    height: 100%;
+}
+
+.formulario_actions  {
+    width: 100%;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+}
+
+.action__cancelar {
+    justify-self: end;
+}
+
+.action__salvar {
+    grid-column: 3 / 4;
+}
+
+.btn-action {
+    color: #087f23;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 140px;
+    height: 50px;
+    font-size: 1rem;
+    border: 1px solid #087f23;
+    color: #087f23;
+    padding: 2px;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-action:hover {
+    background-color: #087f23;
+    color: #fff;
+    border: 1px solid #087f23;
+}
+
+.rodape {
+    grid-column: 1 / 3;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}

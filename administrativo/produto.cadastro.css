@@ -21,7 +21,7 @@ color: #000000; */
 body {
     display: grid;
     grid-template-columns: 15% 85%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 85% 5%;
 }
 
 .cabecalho {
@@ -126,7 +126,7 @@ body {
 }
 
 .formulario-produto__codigo,
-.formulario-composicao__codigo,
+.formulario-composicao__quantidade,
 .formulario-produto__descricao,
 .formulario-composicao__descricao,
 .formulario-produto__valor {
@@ -136,7 +136,6 @@ body {
     color: #000000;
 }
 .opcoes__descricao,
-.opcoes__quantidade,
 .opcoes__valor {
     padding: 6px;
     border: 1px solid #087f23;
@@ -170,18 +169,12 @@ body {
     grid-column: 1 / 3;
 }
 
-.opcoes__quantidade--wrapper {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
-}
-
 .opcoes__valor--wrapper {
     grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
 }
 
 .opcoes__descricao,
-.opcoes__quantidade,
 .opcoes__valor {
     width: 100%;
 }
@@ -251,4 +244,15 @@ body {
     color: red;
     cursor: pointer;
     align-self: center;
+}
+
+.rodape {
+    grid-column: 1 / 3;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 0 1rem;
+    font-size: 1.1rem;
 }

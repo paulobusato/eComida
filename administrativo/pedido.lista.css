@@ -21,7 +21,7 @@ color: #000000; */
 body {
     display: grid;
     grid-template-columns: 15% 85%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 85% 5%;
 }
 
 .cabecalho {
@@ -151,4 +151,15 @@ body {
 
 .pedido-produtos {
     grid-column: 1 / 4;
+}
+
+.rodape {
+    grid-column: 1 / 3;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 0 1rem;
+    font-size: 1.1rem;
 }
