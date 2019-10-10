@@ -27,8 +27,8 @@ body {
     grid-template-rows: 30% auto;
 }
 
-.cabecalho__navegacao {
-    background-color: #4caf50;
+/* .cabecalho__navegacao {
+    background-color: #087f23;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -40,6 +40,123 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 2em;
+} */
+
+.cabecalho__navegacao {
+    height: 4rem;
+    background-color: #4caf50;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.cabecalho__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.sacola-button {
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.sacola-button__icon {
+    font-size: 2em;
+}
+
+.sacola-container {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: 10%;
+    top: 5rem;
+    color: #000000;
+    padding: 1rem;
+    background-color: #80e27e;
+    border-radius: .3rem;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, .12);
+    z-index: 10000;
+}
+
+.sacola__estabelecimento {
+    margin: 1rem 0;
+}
+
+.sacola-pedido {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    padding-right: 3rem;
+}
+
+.sacola-pedido__descricao {
+    font-weight: bold;
+}
+
+.sacola-pedido__ingredientes {
+    font-size: .9em;
+}
+
+.sacola-pedido__preco {
+    font-weight: bold;
+}
+
+.sacola-pedido__actions {
+    position: absolute;
+    right: .5rem;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sacola-pedido__editar,
+.sacola-pedido__remover {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sacola__divider {
+    margin: 1rem 0;
+    border: 1px solid #4caf50;
+}
+
+.run-animation {
+    animation-name: slidein;
+    animation-duration: 0.7s;
+}
+
+.display--hidden {
+    overflow: hidden;
+}
+
+.display--none {
+    display: none;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .cabecalho__titulo {
@@ -105,11 +222,28 @@ body {
 }
 
 .rodape {
-    background-color: #087f23;
+    background-color: #356859;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #000000;
     padding: 0 1rem;
     font-size: 1.1rem;
+}
+
+/* @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) { */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    body {
+        gap: 0;
+        grid-template-rows: 20% 5% auto 5%;
+    }
+
+    .cabecalho__divider {
+        align-self: center;
+    }
+    
+    .rodape {
+        margin: 0;
+        height: 5rem;
+    }
 }

@@ -11,8 +11,6 @@
 
 html, body {
     height: 100%;
-    /* background-color: #FFFBE6; */
-    /* background-color: #efefef; */
 }
 
 .cabecalho-principal {
@@ -56,6 +54,10 @@ html, body {
     border-radius: 4px;
 }
 
+.icon-entrar {
+    display: none;
+}
+
 .cabecalho-principal__navegacao__entrar:hover {
     background-color: #087f23;
     color: #000000;
@@ -74,9 +76,16 @@ html, body {
 
 .categorias__container {
     margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.categorias__container::-webkit-scrollbar {
+    height: 3px;
+}
+
+.categorias__container::-webkit-scrollbar-thumb {
+    background-color: #cecece;
 }
 
 .categorias__item {
@@ -84,7 +93,7 @@ html, body {
     height: 250px;
     width: 300px;
     display: inline-block;
-    margin-right: 1rem;
+    margin: 1rem;
     transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	will-change: box-shadow;
     border-radius: 16px;
@@ -119,8 +128,16 @@ html, body {
 
 .recomendacoes__container {
     margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.recomendacoes__container::-webkit-scrollbar {
+    height: 3px;
+}
+
+.recomendacoes__container::-webkit-scrollbar-thumb {
+    background-color: #cecece;
 }
 
 .recomendacoes__item {
@@ -128,7 +145,7 @@ html, body {
     width: 300px;
     height: 300px;
     display: inline-block;
-    margin-right: 1rem;
+    margin: 1rem;
     transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	will-change: box-shadow;
     border-radius: 16px;
@@ -158,8 +175,6 @@ html, body {
 }
 
 .estabelecimento {
-    /* background-color: #B9E4C9; */
-    /* background-color: #FFFBE6; */
     background-color: #4caf50;
     height: 300px;
     width: 100%;
@@ -183,15 +198,15 @@ html, body {
 
 .btn-cadastro-estabelecimento {
     text-decoration: none;
-    color: #000000;
-    background-color: #087f23;
     padding: 1rem;
-    font-size: 1.25rem;
     line-height: 1.25em;
     text-align: center;
     border-radius: 4px;
     width: 20rem;
     margin-top: 1rem;
+    font-size: 1.3em;
+    background-color: #FD5523;
+    color: #fff;
 }
 
 .btn-cadastro-estabelecimento:hover {
@@ -371,4 +386,69 @@ html, body {
 .mdc-elevation-transition {
 	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	will-change: box-shadow
+}
+
+
+/* @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {     */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    .cabecalho-principal {
+        width: 100%;
+        margin: 0;
+    }
+
+    .conteudo-principal {
+        margin: 0;
+        margin-top: 12px;
+    }
+
+    .cabecalho-principal__navegacao {
+        background-color: #087f23;
+        justify-content: flex-start;
+        padding: 12px;
+    }
+
+    .cabecalho-principal__navegacao__titulo {
+        color: #fff;
+    }
+
+    
+    .categorias__item {
+        height: 100px;
+        width: 150px;
+    }
+
+    .btn-entrar {
+        display: none;
+    }
+
+    .icon-entrar {
+        display: block;
+        color: #fff;
+        margin-left: 10p;
+        position: absolute;
+        right: 24px;
+    }
+
+    .icon-entrar i {
+        font-size: 3em;
+    }
+
+    .estabelecimento {
+        border-radius: 0;
+        height: 350px;
+    }
+
+    .estabelecimento h2 {
+        color: #fff;
+    }
+
+    .recomendacoes__item {
+        height: 200px;
+        width: 150px;
+    }
+
+    .rodape {
+        margin: 0;
+        height: 5rem;
+    }
 }

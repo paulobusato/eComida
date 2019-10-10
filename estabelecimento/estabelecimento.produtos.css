@@ -359,17 +359,9 @@ html, body {
     cursor: pointer;
 }
 
-.pedido__remove-produto {
-
-}
-
 .quantidade__produto {
     font-size: 1.3em;
     font-weight: bold;
-}
-
-.pedido__add-produto {
-
 }
 
 .pedido__check-produto {
@@ -382,7 +374,6 @@ html, body {
 }
 
 .display--hidden {
-    /* display: hidden; */
     overflow: hidden;
 }
 
