@@ -42,6 +42,14 @@ class EstabelecimentoDao extends Dao
       SELECT ID, RAZAOSOCIAL, NOMEFANTASIA, CNPJ, STATUS
       FROM ESTABELECIMENTO
     ";
-		$this->executar($sql);
+    $resultado = mysqli_fetch_array($this->executar($sql));
+    return new Estabelecimento(
+      $resultado["ID"],
+      $resultado["RAZAOSOCIAL"],
+      $resultado["NOMEFANTASIA"],
+      $resultado["CNPJ"],
+      $resultado["STATUS"]
+    );
 	}
 }
+?>

@@ -1,3 +1,9 @@
+<?php
+    require_once("../../controle/EstabelecimentoAction.php");
+
+    // $estabelecimento = new Estabelecimento();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +29,7 @@
     <main class="conteudo-principal">
         <h1 class="conteudo-principal__titulo">Estabelecimento</h1>
         <hr class="conteudo-principal__divider">
-        <form action="../../controle/EstabelecimentoAction.php" class="formulario">
+        <form action="../../controle/EstabelecimentoAction.php" method="POST" class="formulario">
             <section class="formulario__section formulario__section--cadastro">
                 <article class="formulario__item">
                     <label for="nomeFantasia">Nome Fantasia</label>
@@ -66,7 +72,7 @@
             </section>
             <nav class="formulario_actions">
                 <button class="btn-action action__cancelar">Cancelar</button>
-                <button type="submit" class="btn-action action__salvar">Salvar</button>
+                <button type="submit" name="btnSalvar" class="btn-action action__salvar">Salvar</button>
             </nav>
         </form>
     </main>

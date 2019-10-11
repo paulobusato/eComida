@@ -1,56 +1,67 @@
-<?
-require_once("../modelo/entidade/Cliente.php");
-require_once("../modelo/dao/ClienteDao.php");
-require_once("../visao/View.php");
+<?php
+	require_once("../modelo/entidade/Estabelecimento.php");
+// require_once("../modelo/dao/EstabelecimentoDao.php");
+// require_once("../visao/administrativo/estabelecimento.cadastro.php");
 
-session_start();
-$listar = FALSE;
+// var_dump($_POST);
 
-if (isset($_POST["btnCadastrar"])) {
-	$cliente = new Cliente($_POST["cpf"], $_POST["nome"], $_POST["dt_nasc"],
-					   $_POST["telefone"], $_POST["rg"]);
-	$dao = new ClienteDao();
-	$dao->inserir($cliente);
-	
-	$listar = TRUE;
-}
-if (isset($_POST["btnAlterar"])) {
-	$cliente = new Cliente($_POST["cpf"], $_POST["nome"], $_POST["dt_nasc"],
-					   $_POST["telefone"], $_POST["rg"]);
-	$dao = new ClienteDao();
-	$dao->alterar($cliente);
-
-	$listar = TRUE;
-}
-if (isset($_GET["novoCadastro"])) {
-	$v = new View("../visao/ClienteCad.php", null);
-	$v->showContent();	
-	
-}
-if (isset($_GET["editar"])) {
-	$dao = new ClienteDao();
-	$c = $dao->get($_GET["id"]);
-	$params["cliente"] = $c;
-	$params["editar"] = TRUE;
-	$v = new View("../visao/ClienteCad.php", $params);
-	$v->showContent();		
+function obterDadosCadastrais()
+{
+	return (new EstabelecimentoDao())->consultar();
 }
 
-if (isset($_GET["excluir"])) {
-	$dao = new ClienteDao();
-	$c = $dao->excluir(new Cliente($_GET["id"], "","","",""));
-	
-	$listar = TRUE;
-}
+// require_once("../modelo/entidade/Cliente.php");
+// require_once("../modelo/dao/ClienteDao.php");
+// require_once("../visao/View.php");
 
-if ($listar) {
-	$dao = new ClienteDao();
-	$clientes = $dao->consultar();
+// session_start();
+// $listar = FALSE;
+
+// if (isset($_POST["btnCadastrar"])) {
+// 	$cliente = new Cliente($_POST["cpf"], $_POST["nome"], $_POST["dt_nasc"],
+// 					   $_POST["telefone"], $_POST["rg"]);
+// 	$dao = new ClienteDao();
+// 	$dao->inserir($cliente);
 	
-	$params["listaClientes"] = (new ClienteDao())->consultar();
+// 	$listar = TRUE;
+// }
+// if (isset($_POST["btnAlterar"])) {
+// 	$cliente = new Cliente($_POST["cpf"], $_POST["nome"], $_POST["dt_nasc"],
+// 					   $_POST["telefone"], $_POST["rg"]);
+// 	$dao = new ClienteDao();
+// 	$dao->alterar($cliente);
+
+// 	$listar = TRUE;
+// }
+// if (isset($_GET["novoCadastro"])) {
+// 	$v = new View("../visao/ClienteCad.php", null);
+// 	$v->showContent();	
 	
-	$v = new View("../visao/ClienteList.php", $params);
-	$v->showContent();
-}
+// }
+// if (isset($_GET["editar"])) {
+// 	$dao = new ClienteDao();
+// 	$c = $dao->get($_GET["id"]);
+// 	$params["cliente"] = $c;
+// 	$params["editar"] = TRUE;
+// 	$v = new View("../visao/ClienteCad.php", $params);
+// 	$v->showContent();		
+// }
+
+// if (isset($_GET["excluir"])) {
+// 	$dao = new ClienteDao();
+// 	$c = $dao->excluir(new Cliente($_GET["id"], "","","",""));
+	
+// 	$listar = TRUE;
+// }
+
+// if ($listar) {
+// 	$dao = new ClienteDao();
+// 	$clientes = $dao->consultar();
+	
+// 	$params["listaClientes"] = (new ClienteDao())->consultar();
+	
+// 	$v = new View("../visao/ClienteList.php", $params);
+// 	$v->showContent();
+// }
 
 ?>

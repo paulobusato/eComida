@@ -15,3 +15,4 @@ class Estabelecimento
     $this->status = $status;
   }
 }
+?>

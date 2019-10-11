@@ -13,3 +13,4 @@ abstract class Dao
   public abstract function excluir($Objeto);
   public abstract function consultar($id);
 }
+?>
