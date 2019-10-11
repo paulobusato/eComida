@@ -15,15 +15,15 @@
     </header>
     <aside class="navegacao-container">
         <nav class="navegacao">
-            <a href="pedido.lista.html" class="navegacao__item">Pedidos</a>
-            <a href="produto.cadastro.html" class="navegacao__item">Produtos</a>
-            <a href="estabelecimento.cadastro.html" class="navegacao__item">Estabelecimento</a>
+            <a href="pedido.lista.php" class="navegacao__item">Pedidos</a>
+            <a href="produto.cadastro.php" class="navegacao__item">Produtos</a>
+            <a href="estabelecimento.cadastro.php" class="navegacao__item">Estabelecimento</a>
         </nav>
     </aside>
     <main class="conteudo-principal">
         <h1 class="conteudo-principal__titulo">Estabelecimento</h1>
         <hr class="conteudo-principal__divider">
-        <form action="#" class="formulario">
+        <form action="../../controle/EstabelecimentoAction.php" class="formulario">
             <section class="formulario__section formulario__section--cadastro">
                 <article class="formulario__item">
                     <label for="nomeFantasia">Nome Fantasia</label>
@@ -66,7 +66,7 @@
             </section>
             <nav class="formulario_actions">
                 <button class="btn-action action__cancelar">Cancelar</button>
-                <button class="btn-action action__salvar">Salvar</button>
+                <button type="submit" class="btn-action action__salvar">Salvar</button>
             </nav>
         </form>
     </main>
