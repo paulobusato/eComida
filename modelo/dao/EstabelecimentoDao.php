@@ -1,6 +1,6 @@
 <?php
 require_once("Dao.php");
-require_once("../entidade/Estabelecimento.php");
+require_once("../../modelo/entidade/Estabelecimento.php");
 
 class EstabelecimentoDao extends Dao
 {

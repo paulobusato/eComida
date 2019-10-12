@@ -1,14 +1,12 @@
 <?php
-	require_once("../modelo/entidade/Estabelecimento.php");
-// require_once("../modelo/dao/EstabelecimentoDao.php");
-// require_once("../visao/administrativo/estabelecimento.cadastro.php");
+	require_once("../../modelo/dao/EstabelecimentoDao.php");
 
 // var_dump($_POST);
 
-function obterDadosCadastrais()
-{
-	return (new EstabelecimentoDao())->consultar();
-}
+// function obterDadosCadastrais()
+// {
+// 	return (new EstabelecimentoDao())->consultar();
+// }
 
 // require_once("../modelo/entidade/Cliente.php");
 // require_once("../modelo/dao/ClienteDao.php");

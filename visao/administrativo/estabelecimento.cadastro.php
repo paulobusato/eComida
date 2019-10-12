@@ -1,7 +1,5 @@
 <?php
     require_once("../../controle/EstabelecimentoAction.php");
-
-    // $estabelecimento = new Estabelecimento();
 ?>
 
 <!DOCTYPE html>
