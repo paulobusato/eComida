@@ -14,23 +14,24 @@ html, body {
 }
 
 .cabecalho-principal {
-    margin: 0 10%;
-    margin-bottom: 3rem;
+    width: 100%;
+    margin: 0;
 }
 
 .cabecalho-principal__navegacao {
+    background-color: #087f23;
     position: relative;
-    padding: 2rem 0;
+    padding: 12px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .cabecalho-principal__navegacao__titulo {
-    color: #087f23;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
     margin: 0;
 }
 
@@ -45,7 +46,7 @@ html, body {
     color: #087f23;
     padding: 2px;
     background-color: #fff;
-    display: inline-flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-weight: bold;
@@ -54,24 +55,37 @@ html, body {
     border-radius: 4px;
 }
 
-.icon-entrar {
-    display: none;
-}
-
 .cabecalho-principal__navegacao__entrar:hover {
     background-color: #087f23;
     color: #000000;
     border: 1px solid #087f23;
 }
 
+.icon-entrar {
+    display: block;
+    color: #fff;
+    margin-left: 10p;
+    position: absolute;
+    right: 24px;
+}
+
+.icon-entrar i {
+    font-size: 3em;
+}
+
 .conteudo-principal {
-    margin: 0 10%;
+    margin: 0;
+    margin-top: 12px;
     color: #087f23;
 }
 
 .conteudo-principal h3 {
     font-size: 2em;
     text-align: center;
+}
+
+.flecha-slide {
+    display: none;
 }
 
 .categoria__controller {
@@ -84,37 +98,14 @@ html, body {
 
 .categorias__container {
     margin-top: 3rem;
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap;
-    transition: all 10s ease-out;
-}
-
-.flecha-slide {
-    position: absolute;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 1000;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.flecha-slide i {
-    font-size: 48px;
-}
-
-.flecha-slide--esquerda {
-    left: 0;
-}
-
-.flecha-slide--direita {
-    right: 0;
 }
 
 .categorias__item {
     position: relative;
-    height: 250px;
-    width: 300px;
+    height: 100px;
+    width: 150px;
     display: inline-block;
     margin: 1rem;
     transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -129,7 +120,7 @@ html, body {
 
 .categorias__img {
     position: absolute;
-    height: 80%;
+    height: 70%;
     width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -151,14 +142,14 @@ html, body {
 
 .recomendacoes__container {
     margin-top: 3rem;
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap;
 }
 
 .recomendacoes__item {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
     display: inline-block;
     margin: 1rem;
     transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -191,10 +182,10 @@ html, body {
 
 .estabelecimento {
     background-color: #4caf50;
-    height: 300px;
+    height: 350px;
     width: 100%;
-    padding: 2rem;
-    border-radius: 14px;
+    padding: 32px;
+    border-radius: 0;
     display: flex;
     flex-direction: column;
 }
@@ -207,27 +198,26 @@ html, body {
 }
 
 .estabelecimento h2 {
+    color: #fff;
     font-weight: bold;
     font-size: 2em;
 }
 
 .btn-cadastro-estabelecimento {
     text-decoration: none;
-    padding: 1rem;
+    padding: 16px;
     line-height: 1.25em;
-    text-align: center;
     border-radius: 4px;
-    width: 20rem;
+    width: 250px;
     margin-top: 1rem;
-    font-size: 1.3em;
     background-color: #FD5523;
     color: #fff;
 }
 
 .btn-cadastro-estabelecimento:hover {
     background-color: white;
-    border: 1px solid #087f23;
-    color: #087f23;
+    border: none;
+    color: #FD5523;
 }
 
 .depoimentos {
@@ -287,8 +277,8 @@ html, body {
 }
 
 .rodape {
-    height: 3rem;
-    margin-top: 5rem;
+    height: 5rem;
+    margin: 0;
     background-color: #356859;
     display: flex;
     justify-content: space-between;
@@ -303,9 +293,96 @@ html, body {
 	will-change: box-shadow
 }
 
+.display-none {
+    display: none;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+
+@media only screen  and (min-width : 1224px) {
+    .cabecalho-principal {
+        padding: 0 10%;
+        margin-bottom: 3rem;
+    }
+    
+    .cabecalho-principal__navegacao {
+        justify-content: center;
+        padding: 2rem 0;
+        background-color: #fff;
+    }
+
+    .cabecalho-principal__navegacao__titulo {
+        color: #087f23;
+    }
+    
+    .cabecalho-principal__navegacao__entrar {
+        display: inline-flex;
+    }
+
+    .icon-entrar {
+        display: none;
+    }
+
+    .conteudo-principal {
+        margin: 0 10%;
+    }
+
+    .flecha-slide {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .flecha-slide i {
+        font-size: 48px;
+    }
+    
+    .flecha-slide--esquerda {
+        left: 0;
+    }
+    
+    .flecha-slide--direita {
+        right: 0;
+    }
+    
+    .categorias__container,
+    .recomendacoes__container {
+        overflow: hidden;
+    }
+
+    .categorias__item {
+        height: 250px;
+        width: 300px;
+    }
+
+    .estabelecimento {
+        border-radius: 14px;
+        height: 300px;
+    }
+
+    .estabelecimento h2 {
+        color: #000000;
+    }
+
+    .recomendacoes__item {
+        width: 300px;
+        height: 300px;
+    }
+
+    .rodape {
+        margin-top: 5rem;
+        height: 3rem;
+    }
+}
 
 /* @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {     */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+/* @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
     .cabecalho-principal {
         width: 100%;
         margin: 0;
@@ -366,4 +443,4 @@ html, body {
         margin: 0;
         height: 5rem;
     }
-}
+} */
