@@ -12,11 +12,18 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__navegacao">
+            <a href="#" class="voltar__link">
+                <i class="material-icons voltar__icon">keyboard_arrow_left</i>
+            </a>
             <a class="cabecalho__logo" href="/index.html">eComida</a>
             <button class="sacola-button"><i class="material-icons sacola-button__icon">shopping_cart</i></button>
-            <section class="sacola-container display--none">
-                <p class="sacola__texto">Seu pedido em</p>
-                <h3 class="sacola__estabelecimento">Number One Chicken</h3>
+        </nav>
+        <h1 class="cabecalho__titulo">Salada</h1>
+        <hr class="cabecalho__divider">
+    </header>
+    <!-- <section class="sacola-container display--none">
+        <p class="sacola__texto">Seu pedido em</p>
+        <h3 class="sacola__estabelecimento">Number One Chicken</h3>
                 <hr class="sacola__divider">
                 <section class="sacola-pedidos">
                     <article class="sacola-pedido">
@@ -50,14 +57,10 @@
                     </article>
                     <hr class="sacola__divider">
                 </section>
-            </section>
-        </nav>
-        <h1 class="cabecalho__titulo">Salada</h1>
-    </header>
-    <hr class="cabecalho__divider">
+            </section> -->
     <section class="estabelecimento-list">
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="estabelecimento.produtos.html">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -69,7 +72,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="estabelecimento.produtos.html">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -81,7 +84,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="estabelecimento.produtos.html">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -93,7 +96,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="estabelecimento.produtos.html">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -105,7 +108,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="estabelecimento.produtos.html">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -117,7 +120,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="estabelecimento.produtos.html">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -133,6 +136,11 @@
         <span class="copyright">2019 &copy; Todos os direitos reservados</span>
         <span>Buzato Tecnologia</span>
     </footer>
+    <nav class="menu">
+        <a href="#" class="menu__link"><i class="material-icons menu__icon">home</i></a>
+        <a href="#" class="menu__link"><i class="material-icons menu__icon">search</i></a>
+        <a href="#" class="menu__link"><i class="material-icons menu__icon">shopping_basket</i></a>
+    </nav>
     <script>
         var body = document.querySelector('body');
         var sacolaButton = document.querySelector('.sacola-button');
