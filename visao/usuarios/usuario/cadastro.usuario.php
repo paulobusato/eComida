@@ -14,7 +14,7 @@
 <body>
     <?php require_once('/workspaces/eComida/visao/compartilhado/cabecalho/cabecalho.php'); ?>
     <form action="" class="cadastro-formulario">
-        <h2>Cadastro</h2>
+        <h2 class="cadastro-formulario__titulo">Cadastro</h2>
         <address>
             <section class="primeiro-bloco">
                 <h3>Pessoal</h3>
@@ -31,8 +31,8 @@
             </section>
         </address>
         <section class="cadastro-navegacao">
-            <button type="button" class="btnCancelar">Cancelar</button>
-            <button type="button" class="btnConfirmar">Confirmar</button>
+            <a href="/visao/usuarios/login/login.php" class="btnCancelar">Cancelar</a>
+            <a href="#" class="btnConfirmar">Confirmar</a>
         </section>
     </form>
   <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>
