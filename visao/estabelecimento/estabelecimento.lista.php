@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/estabelecimento/estabelecimento.lista.css">
+    <link rel="stylesheet" href="estabelecimento.lista.css">
     <title>Lista de Estabelecimento</title>
 </head>
 <body>
