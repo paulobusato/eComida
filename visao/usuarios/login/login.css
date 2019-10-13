@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    /* background-color: #efefef; */
+    height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% auto 10%;
+}
+
+.imagem-fundo {
+  display: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  /* background-color: #efefef; */
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+  color: #000000;
+  animation-name: entrada-container;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cadastro {
+  background-color: #4caf50;
+  padding: 24px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.btnCadastrar {
+  background-color: #087f23;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5rem;
+  height: 3rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnCadastrar:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.entrar {
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% auto 20%;
+  justify-items: center;
+  align-items: center;
+}
+
+.entrar__titulo {
+  color: #087f23;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  margin: 0;
+}
+
+.entrar-formulario {
+  height: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-content: center;
+  gap: 24px;
+}
+
+.entrar__input {
+  border: 1px solid #087f23;
+  border-radius: .5rem;
+  padding: .5rem;
+  width: 17rem;
+  outline: none;
+}
+
+.entrar__button {
+  height: 3rem;
+  width: 10rem;
+  background-color: #087f23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #087f23;
+  outline: none;
+  cursor: pointer;
+}
+
+.entrar__button:hover {
+  background-color: transparent;
+  color: #087f23;
+  border: 1px solid #087f23;
+}
+
+@keyframes entrada-container {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+
+@media only screen  and (min-width : 1224px) {
+  .cabecalho-principal__navegacao__entrar {
+    display: none;
+  }
+  
+  .imagem-fundo {
+    background-image: url("https://c.wallhere.com/photos/dc/8b/2560x1600_px_food_mushroom_Onions_Peppers_Spoon_Tomatoes_Wooden_Surface-827582.jpg!d");
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    padding: 10%;
+  }
+
+  .cadastro {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .cadastro-titulo {
+    font-size: 1.7rem;
+  }
+
+  .cadastro-subtitulo {
+    font-size: 1.1rem;
+  }
+}
