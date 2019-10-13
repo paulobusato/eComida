@@ -20,6 +20,13 @@ RUN apt-get update \
     # Install git, procps, lsb-release (useful for CLI installs)
     && apt-get -y install git procps iproute2 lsb-release \
     #
+    # Install mysqli
+    && docker-php-ext-install mysqli \
+    # 
+    # Enable mysqli
+    && docker-php-ext-enable mysqli \
+    #
+    #
     # Install xdebug
     && yes | pecl install xdebug \
     && echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini \
