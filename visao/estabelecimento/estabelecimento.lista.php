@@ -12,7 +12,7 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__navegacao">
-            <a href="#" class="voltar__link">
+            <a href="/index.html" class="voltar__link">
                 <i class="material-icons voltar__icon">keyboard_arrow_left</i>
             </a>
             <a class="cabecalho__logo" href="/index.html">eComida</a>
