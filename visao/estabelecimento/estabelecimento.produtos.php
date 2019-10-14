@@ -6,11 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/visao/compartilhado/cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="/visao/compartilhado/cabecalho/rodape.css">
   <link rel="stylesheet" href="estabelecimento.produtos.css">
   <title>Estabelecimento - Produtos</title>
 </head>
 <body>
   <header class="cabecalho">
+    <nav class="cabecalho__navegacao">
+        <a href="/visao/estabelecimento/estabelecimento.lista.php" class="voltar__link">
+            <i class="material-icons voltar__icon">keyboard_arrow_left</i>
+        </a>
+        <a class="cabecalho__logo" href="/index.html">eComida</a>
+        <button class="sacola-button"><i class="material-icons sacola-button__icon">shopping_cart</i></button>
+    </nav>
+    <h1 class="cabecalho__titulo">Bobs</h1>
+    <hr class="cabecalho__divider">
+  </header>
+  <!-- <header class="cabecalho">
     <nav class="cabecalho__navegacao">
       <a class="cabecalho__logo" href="/index.html">eComida</a>
       <button class="sacola-button"><i class="material-icons sacola-button__icon">shopping_cart</i></button>
@@ -56,57 +69,8 @@
     </nav>
     <h1 class="cabecalho__titulo">Bobs</h1>
     <hr class="cabecalho__divider">
-  </header>
-  <main>
-    <section class="destaque">
-      <header class="destaque__titulo-container">
-        <h2 class="destaque__titulo">Destaques</h2>
-      </header>
-      <article class="destaque__card">
-        <section>
-          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
-        </section>
-        <section class="destaque__descricao">
-          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
-          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
-          <p class="destaque__preco">R$ 27,99</p>
-          <button class="destaque__icon"><i class="material-icons">add</i></button>
-        </section>
-      </article>
-      <article class="destaque__card">
-        <section>
-          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
-        </section>
-        <section class="destaque__descricao">
-          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
-          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
-          <p class="destaque__preco">R$ 27,99</p>
-          <button class="destaque__icon"><i class="material-icons">add</i></button>
-        </section>
-      </article>
-      <article class="destaque__card">
-        <section>
-          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
-        </section>
-        <section class="destaque__descricao">
-          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
-          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
-          <p class="destaque__preco">R$ 27,99</p>
-          <button class="destaque__icon"><i class="material-icons">add</i></button>
-        </section>
-      </article>
-      <article class="destaque__card">
-        <section>
-          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
-        </section>
-        <section class="destaque__descricao">
-          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
-          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
-          <p class="destaque__preco">R$ 27,99</p>
-          <button class="destaque__icon"><i class="material-icons">add</i></button>
-        </section>
-      </article>
-    </section>
+  </header> -->
+  <main class="conteudo-principal">
     <section class="destaque">
       <header class="destaque__titulo-container">
         <h2 class="destaque__titulo">Destaques</h2>
@@ -157,11 +121,16 @@
       </article>
     </section>
   </main>
-  <footer class="rodape">
+  <!-- <footer class="rodape">
     <span class="copyright">2019 &copy; Todos os direitos reservados</span>
     <span>Buzato Tecnologia</span>
-  </footer>
-  <div id="background" class="display--none">
+  </footer> -->
+  <nav class="menu">
+    <a href="#" class="menu__link"><i class="material-icons menu__icon">home</i></a>
+    <a href="#" class="menu__link"><i class="material-icons menu__icon">search</i></a>
+    <a href="#" class="menu__link"><i class="material-icons menu__icon">shopping_basket</i></a>
+  </nav>
+  <!-- <div id="background" class="display--none">
     <main class="pedido run-animation">
       <header class="pedido__header">
         <h3 class="pedido__titulo">Marmitex churrasco 500g, coca cola 1,5l</h3>
@@ -216,7 +185,7 @@
         <button class="pedido__check-produto"><i class="material-icons">check</i></button>
       </footer>
     </main>
-  </div>
+  </div> -->
   <script>
     var background = document.querySelector('#background');
     var addButton = document.querySelectorAll('.destaque__icon');

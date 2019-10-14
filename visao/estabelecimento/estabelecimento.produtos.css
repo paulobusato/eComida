@@ -11,10 +11,64 @@
 
 html, body {
     height: 100%;
-    /* background-color: #efefef; */
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% auto 5%;
+    gap: 3rem;
 }
 
 .cabecalho {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 33.33% auto 5%;
+}
+
+.cabecalho__navegacao {
+    background-color: #087f23;
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.voltar__link {
+    color: #fff;
+    outline: none;
+}
+
+.voltar__icon {
+    font-size: 36px;
+}
+
+.cabecalho__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.sacola-button {
+    display: none;
+}
+
+.cabecalho__titulo {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 4em;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.cabecalho__divider {
+    margin: 2% 10%;   
+}
+
+/* .cabecalho {
     min-height: 5vh;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 3rem;
@@ -111,26 +165,19 @@ html, body {
 .sacola__divider {
     margin: 1rem 0;
     border: 1px solid #4caf50;
-}
+} */
 
-.cabecalho__titulo {
-    color: #4caf50;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 4em;
-    margin: 0 10%;
-}
-
-.cabecalho__divider {
-    margin: 2% 10%;   
+.conteudo-principal {
+    width: 100%;
+    padding-bottom: 15%;
 }
 
 .destaque {
   margin: 0 10%;
-  display: grid;
-  grid-template-columns: repeat(4, 290px);
-  grid-template-rows: 3rem 336px;
-  gap: 28px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 290px); */
+  /* grid-template-rows: 3rem 336px; */
+  /* gap: 28px; */
   margin-bottom: 3rem;
 }
 
@@ -148,6 +195,7 @@ html, body {
 }
 
 .destaque__card {
+  margin-top: 24px;
   display: grid;
   grid-template-rows: 50% 50%;
   position: relative;
@@ -381,13 +429,47 @@ html, body {
     display: none;
 }
 
+.menu {
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #4caf50;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.menu__link {
+    color: #000000;
+    outline: none;
+}
+
+.menu__icon {
+    font-size: 36px;
+}
+
 @keyframes slidein {
-    from {
+    from` {
         transform: translateY(100%);
         opacity: 0;
     }
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media only screen  and (min-width : 1224px) {
+    .destaque {
+        display: grid;
+        grid-template-columns: repeat(4, 290px);
+        grid-template-rows: 3rem 336px;
+        gap: 28px;
+    }
+
+    .menu {
+        display: none;
     }
 }
