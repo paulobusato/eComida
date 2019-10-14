@@ -23,53 +23,43 @@
     <h1 class="cabecalho__titulo">Bobs</h1>
     <hr class="cabecalho__divider">
   </header>
-  <!-- <header class="cabecalho">
-    <nav class="cabecalho__navegacao">
-      <a class="cabecalho__logo" href="/index.html">eComida</a>
-      <button class="sacola-button"><i class="material-icons sacola-button__icon">shopping_cart</i></button>
-      <section class="sacola-container display--none">
-        <p class="sacola__texto">Seu pedido em</p>
-        <h3 class="sacola__estabelecimento">Number One Chicken</h3>
+  <section class="sacola-container display--none">
+    <p class="sacola__texto">Seu pedido em</p>
+    <h3 class="sacola__estabelecimento">Number One Chicken</h3>
+    <hr class="sacola__divider">
+    <section class="sacola-pedidos">
+        <article class="sacola-pedido">
+            <p class="sacola-pedido__descricao"><span>1</span>x Combo p - <span>indicamos para 1 a 2 pessoas</span></p>
+            <p class="sacola-pedido__ingredientes">
+            <span>1x Tiras de filé de coxa e sobrecoxa</span>,
+            <span>1x Arroz branco g</span>,
+            <span>1x Maionese verde</span>
+            </p>
+            <p class="sacola-pedido__preco">R$ 32,99</p>
+            <nav class="sacola-pedido__actions">
+            <button class="sacola-pedido__editar"><i class="material-icons">edit</i></button>
+            <button class="sacola-pedido__remover"><i class="material-icons">remove_circle_outline</i></button>
+            </nav>
+        </article>
         <hr class="sacola__divider">
-        
-        <section class="sacola-pedidos">
-          <article class="sacola-pedido">
+    </section>
+    <section class="sacola-pedidos">
+        <article class="sacola-pedido">
             <p class="sacola-pedido__descricao"><span>1</span>x Combo p - <span>indicamos para 1 a 2 pessoas</span></p>
             <p class="sacola-pedido__ingredientes">
-              <span>1x Tiras de filé de coxa e sobrecoxa</span>,
-              <span>1x Arroz branco g</span>,
-              <span>1x Maionese verde</span>
+            <span>1x Tiras de filé de coxa e sobrecoxa</span>,
+            <span>1x Arroz branco g</span>,
+            <span>1x Maionese verde</span>
             </p>
             <p class="sacola-pedido__preco">R$ 32,99</p>
             <nav class="sacola-pedido__actions">
-              <button class="sacola-pedido__editar"><i class="material-icons">edit</i></button>
-              <button class="sacola-pedido__remover"><i class="material-icons">remove_circle_outline</i></button>
+            <button class="sacola-pedido__editar"><i class="material-icons">edit</i></button>
+            <button class="sacola-pedido__remover"><i class="material-icons">remove_circle_outline</i></button>
             </nav>
-          </article>
-          <hr class="sacola__divider">
-        </section>
-        
-        <section class="sacola-pedidos">
-          <article class="sacola-pedido">
-            <p class="sacola-pedido__descricao"><span>1</span>x Combo p - <span>indicamos para 1 a 2 pessoas</span></p>
-            <p class="sacola-pedido__ingredientes">
-              <span>1x Tiras de filé de coxa e sobrecoxa</span>,
-              <span>1x Arroz branco g</span>,
-              <span>1x Maionese verde</span>
-            </p>
-            <p class="sacola-pedido__preco">R$ 32,99</p>
-            <nav class="sacola-pedido__actions">
-              <button class="sacola-pedido__editar"><i class="material-icons">edit</i></button>
-              <button class="sacola-pedido__remover"><i class="material-icons">remove_circle_outline</i></button>
-            </nav>
-          </article>
-          <hr class="sacola__divider">
-        </section>
-      </section>
-    </nav>
-    <h1 class="cabecalho__titulo">Bobs</h1>
-    <hr class="cabecalho__divider">
-  </header> -->
+        </article>
+        <hr class="sacola__divider">
+    </section>
+  </section>
   <main class="conteudo-principal">
     <section class="destaque">
       <header class="destaque__titulo-container">
@@ -120,17 +110,69 @@
         </section>
       </article>
     </section>
+
+
+
+    <section class="destaque">
+      <header class="destaque__titulo-container">
+        <h2 class="destaque__titulo">Destaques</h2>
+      </header>
+      <article class="destaque__card">
+        <section>
+          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
+        </section>
+        <section class="destaque__descricao">
+          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
+          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
+          <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
+        </section>
+      </article>
+      <article class="destaque__card">
+        <section>
+          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
+        </section>
+        <section class="destaque__descricao">
+          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
+          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
+          <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
+        </section>
+      </article>
+      <article class="destaque__card">
+        <section>
+          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
+        </section>
+        <section class="destaque__descricao">
+          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
+          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
+          <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
+        </section>
+      </article>
+      <article class="destaque__card">
+        <section>
+          <img class="destaque__img" src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/af7f7d95-85ad-4e08-a2bb-edbb3555fab1/201806062016_40603626.jpg" alt="">
+        </section>
+        <section class="destaque__descricao">
+          <p class="destaque__descricao--principal">Combo p - indicamos para 1 a 2 pessoas</p>
+          <p class="destaque__descricao--secundario">Caixa p + 1 acompanhamento + 1 molho</p>
+          <p class="destaque__preco">R$ 27,99</p>
+          <button class="destaque__icon"><i class="material-icons">add</i></button>
+        </section>
+      </article>
+    </section>
   </main>
-  <!-- <footer class="rodape">
+  <footer class="rodape">
     <span class="copyright">2019 &copy; Todos os direitos reservados</span>
     <span>Buzato Tecnologia</span>
-  </footer> -->
+  </footer>
   <nav class="menu">
     <a href="#" class="menu__link"><i class="material-icons menu__icon">home</i></a>
     <a href="#" class="menu__link"><i class="material-icons menu__icon">search</i></a>
     <a href="#" class="menu__link"><i class="material-icons menu__icon">shopping_basket</i></a>
   </nav>
-  <!-- <div id="background" class="display--none">
+  <div id="background" class="display--none">
     <main class="pedido run-animation">
       <header class="pedido__header">
         <h3 class="pedido__titulo">Marmitex churrasco 500g, coca cola 1,5l</h3>
@@ -185,7 +227,7 @@
         <button class="pedido__check-produto"><i class="material-icons">check</i></button>
       </footer>
     </main>
-  </div> -->
+  </div>
   <script>
     var background = document.querySelector('#background');
     var addButton = document.querySelectorAll('.destaque__icon');
@@ -193,7 +235,7 @@
     var pedido = document.querySelector('.pedido');
     var sacolaButton = document.querySelector('.sacola-button');
     var sacolaContainer = document.querySelector('.sacola-container');
-
+    var pedidoCloseButton = document.querySelector('.pedido_close');
 
     addButton.forEach((button) => {
       button.addEventListener('click', (e) => {
@@ -218,6 +260,13 @@
 
     sacolaButton.addEventListener('click', e => {
       sacolaContainer.classList.toggle('display--none');
+    });
+
+    pedidoCloseButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      background.classList.remove('background');
+      background.classList.add('display--none');
+      body.classList.remove('display--hidden');
     });
   </script>
 </body>
