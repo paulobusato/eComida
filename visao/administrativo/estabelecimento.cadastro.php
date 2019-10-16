@@ -10,20 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="compartilhado/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="compartilhado/rodape/rodape.css">
     <link rel="stylesheet" href="estabelecimento.cadastro.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <a class="cabecalho__logo" href="#">eComida</a>
-    </header>
-    <aside class="navegacao-container">
-        <nav class="navegacao">
-            <a href="pedido.lista.php" class="navegacao__item">Pedidos</a>
-            <a href="produto.cadastro.php" class="navegacao__item">Produtos</a>
-            <a href="estabelecimento.cadastro.php" class="navegacao__item">Estabelecimento</a>
-        </nav>
-    </aside>
+    <?php require_once('/workspaces/eComida/visao/administrativo/compartilhado/cabecalho/cabecalho.php'); ?>
     <main class="conteudo-principal">
         <h1 class="conteudo-principal__titulo">Estabelecimento</h1>
         <hr class="conteudo-principal__divider">
@@ -74,9 +67,6 @@
             </nav>
         </form>
     </main>
-    <footer class="rodape">
-        <span class="copyright">2019 &copy; Todos os direitos reservados</span>
-        <span>Buzato Tecnologia</span>
-    </footer>
+    <?php require_once('/workspaces/eComida/visao/administrativo/compartilhado/rodape/rodape.php'); ?>
 </body>
 </html>

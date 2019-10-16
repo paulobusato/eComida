@@ -13,75 +13,20 @@ html, body {
     height: 100%;
 }
 
-/* color: #087f23;
-color: #4caf50;
-color: #80e27e;
-color: #000000; */
-
 body {
     display: grid;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 10% 85% 5%;
-}
-
-.cabecalho {
-    grid-column: 1 / 3;
-    background-color: #4caf50;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.cabecalho__logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 3em;
-    padding-left: 2rem;
-}
-
-.navegacao-container {
-    width: 100%;
-    height: 100%;
-    background-color: #087f23;
-    opacity: .5;
-}
-
-.navegacao {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 5%) 80%;
-    justify-items: center;
-    align-items: center;
-    border: 2px solid #087f23;
-    gap: 1rem;
-    padding: 16px;
-}
-
-.navegacao__item {
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-decoration: none;
-    color: #000000;
-}
-
-.navegacao__item:hover {
-    font-weight: bold;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 80px auto 40px;
 }
 
 .conteudo-principal {
+    overflow: auto;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 120px 10px auto;
+    /* grid-template-rows: 80px 10px auto; */
 }
-
+/* 
 .conteudo-principal__titulo {
     grid-column: 1 / 3;
     display: flex;
@@ -94,10 +39,11 @@ body {
     justify-self: center;
     align-self: center;
     width: 80%;
-}
+} */
 
 .formulario {
     grid-column: 1 / 3;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -115,7 +61,13 @@ body {
 }
 
 .formulario-composicao {
-    grid-template-rows: repeat(3, 50px) auto;
+    grid-template-rows: repeat(2, 50px) auto;
+}
+
+.composicao-info-wrapper {
+    display: grid;
+    grid-template-columns: 60% 38%;
+    column-gap: 2%;
 }
 
 .formulario-produto__item,
@@ -142,35 +94,14 @@ body {
     color: #000000;
 }
 
-/* .formulario-produto__icon {
-    position: absolute;
-    right: 16px;
-    top: 40%;
-    cursor: pointer;
-    font-size: 2rem;
-} */
-
 .formulario-composicao__opcoes {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 30px auto;
     gap: 6px;
 }
 
 .opcoes__titulo {
     grid-row: 1 / 2;
-    grid-column: 1 / 3;
-    display: flex;
-    align-items: center;
-}
-
-.opcoes__descricao--wrapper {
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
-}
-
-.opcoes__valor--wrapper {
-    grid-row: 3 / 4;
     grid-column: 1 / 3;
 }
 
