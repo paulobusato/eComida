@@ -14,8 +14,6 @@
 <body>
     <?php require_once('/workspaces/eComida/visao/administrativo/compartilhado/cabecalho/cabecalho.php'); ?>
     <main class="conteudo-principal">
-        <!-- <h1 class="conteudo-principal__titulo">Cadastro de Produto</h1>
-        <hr class="conteudo-principal__divider"> -->
         <form action="#" class="formulario">
             <section class="formulario-produto">
                 <h1>Produto</h1>
@@ -44,41 +42,56 @@
                         <input type="number" class="formulario-composicao__quantidade" id="composicaoQuantidade">
                     </article>
                 </section>
-                <section class="formulario-composicao__opcoes">
-                    <h3 class="opcoes__titulo">Opções</h3>
-                    <section class="composicao-info-wrapper">
-                        <article class="opcoes__item opcoes__descricao--wrapper">
-                            <label>Descrição</label>
-                            <input type="text" class="opcoes__descricao">
-                        </article>
-                        <article class="opcoes__item opcoes__valor--wrapper">
-                            <label>Valor</label>
-                            <input type="number" class="opcoes__valor">
-                        </article>
-                    </section>
-                </section>
-            </section>
-            <div class="composicao-divider-wrapper">
-                <hr class="composicao__divider">
-            </div>
-            <section class="composicao__itens">
-                <article class="composicao__item">
-                    <span class="composicao__descricao">Descrição</span>
-                    <span class="composicao__valor">Valor</span>
-                    <span class="composicao__btn-excluir">Excluir</span>
-                </article>
-                <article class="composicao__item">
-                    <span class="composicao__descricao">Morango</span>
-                    <span class="composicao__valor">R$ 20.30</span>
-                    <i class="material-icons composicao__btn-excluir">clear</i>
-                </article>
-                <article class="composicao__item">
-                    <span class="composicao__descricao">Chocolate</span>
-                    <span class="composicao__valor">R$ 7.30</span>
-                    <i class="material-icons composicao__btn-excluir">clear</i>
-                </article>
             </section>
         </form>
+        <section class="preview">
+            <section class="preview__section">
+                <h5 class="preview__titulo">Escolha sua carne. Escolha 2 opção.</h5>
+                <section class="preview__items">
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Lombo de porco</span>
+                    </article>
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Linguiça de churrasco</span>
+                    </article>
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Carne de boi</span>
+                    </article>
+                </section>
+            </section>
+
+            
+            <section class="preview__section">
+                <h5 class="preview__titulo">Escolha sua carne. Escolha 2 opção.</h5>
+                <section class="preview__items">
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Lombo de porco</span>
+                    </article>
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Linguiça de churrasco</span>
+                    </article>
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Carne de boi</span>
+                    </article>
+                </section>
+            </section>
+            
+            
+            <section class="preview__section">
+                <h5 class="preview__titulo">Escolha sua carne. Escolha 2 opção.</h5>
+                <section class="preview__items">
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Lombo de porco</span>
+                    </article>
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Linguiça de churrasco</span>
+                    </article>
+                    <article class="preview__item">
+                        <span class="preview-item__titulo">Carne de boi</span>
+                    </article>
+                </section>
+            </section>
+        </section>
     </main>
     <?php require_once('/workspaces/eComida/visao/administrativo/compartilhado/rodape/rodape.php'); ?>
 </body>

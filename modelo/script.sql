@@ -1,3 +1,5 @@
+DROP DATABASE eComida;
+
 CREATE DATABASE IF NOT EXISTS eComida;
 
 CREATE TABLE IF NOT EXISTS Estabelecimento (
@@ -5,8 +7,11 @@ CREATE TABLE IF NOT EXISTS Estabelecimento (
     RazaoSocial VARCHAR(255) NOT NULL,
     NomeFantasia VARCHAR(255) NULL,
     CNPJ VARCHAR(24) NOT NULL,
+    Email VARCHAR(255),
+    Usuario VARCHAR(255) NOT NULL,
+    Senha VARCHAR(255) NOT NULL,
     Status VARCHAR(2) NOT NULL
 );
 
-INSERT INTO Estabelecimento (RazaoSocial, NomeFantasia, CNPJ, Status)
-VALUES ('eComida LTDA', 'eComida', '99999999999999', 'P');
+INSERT INTO Estabelecimento (RazaoSocial, NomeFantasia, CNPJ, Email, Usuario, Senha, Status)
+VALUES ('eComida LTDA', 'eComida', '99999999999999', 'paulo@busato.com', 'paulo', PASSWORD('123'), 'P');

@@ -1,6 +1,6 @@
 <?php
 require_once("Dao.php");
-require_once("../../modelo/entidade/Estabelecimento.php");
+require_once("/workspaces/eComida/modelo/entidade/Estabelecimento.php");
 
 class EstabelecimentoDao extends Dao
 {
@@ -50,6 +50,17 @@ class EstabelecimentoDao extends Dao
       $resultado["CNPJ"],
       $resultado["STATUS"]
     );
-	}
+  }
+  
+  public function login($usuario, $senha) {
+    $sql = "
+      SELECT idEstabelecimento
+      FROM Estabelecimento
+      WHERE Usuario = '{$usuario}'
+        AND Senha = {$senha}
+    ";
+    // $resultado = mysqli_fetch_array($this->executar($sql));
+    var_dump($this->executar($sql));
+  }
 }
 ?>

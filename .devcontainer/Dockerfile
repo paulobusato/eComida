@@ -26,6 +26,8 @@ RUN apt-get update \
     # Enable mysqli
     && docker-php-ext-enable mysqli \
     #
+    # Enable Dom
+    && docker-php-ext-enable dom \
     #
     # Install xdebug
     && yes | pecl install xdebug \

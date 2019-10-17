@@ -22,11 +22,11 @@
     </section>
     <section class="entrar">
       <h1 class="entrar__titulo">Entrar</h1>
-      <form action="#" class="entrar-formulario">
+      <form action="/controle/LoginAction.php" method="POST" class="entrar-formulario">
         <input class="entrar__input" type="text" name="usuario" id="usuario" placeholder="Usuário">
         <input class="entrar__input" type="password" name="senha" id="senha" placeholder="Senha">
+        <button class="entrar__button" type="submit" class="btnEntrar">Entrar</button>
       </form>
-      <button class="entrar__button" type="button" class="btnEntrar">Entrar</button>
     </section>
   </main>
   <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>
