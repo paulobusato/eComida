@@ -17,7 +17,6 @@
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "php -v",
-	"postCreateCommand": "php -S 0.0.0.0:8000",
 
 	"extensions": [
         "felixfbecker.php-debug",
