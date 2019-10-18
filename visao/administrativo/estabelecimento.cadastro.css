@@ -20,7 +20,7 @@ color: #000000; */
 
 body {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 200px auto;
     grid-template-rows: 10% 85% 5%;
 }
 
