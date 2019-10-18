@@ -39,16 +39,16 @@ class EstabelecimentoDao extends Dao
   	
 	public function consultar($id = null) {
     $sql = "
-      SELECT ID, RAZAOSOCIAL, NOMEFANTASIA, CNPJ, STATUS
-      FROM ESTABELECIMENTO
+      SELECT idEstabelecimento, RazaoSocial, NomeFantasia, CNPJ, Status
+      FROM Estabelecimento
     ";
     $resultado = mysqli_fetch_array($this->executar($sql));
     return new Estabelecimento(
-      $resultado["ID"],
-      $resultado["RAZAOSOCIAL"],
-      $resultado["NOMEFANTASIA"],
+      $resultado["idEstabelecimento"],
+      $resultado["RazaoSocial"],
+      $resultado["NomeFantasia"],
       $resultado["CNPJ"],
-      $resultado["STATUS"]
+      $resultado["Status"]
     );
   }
   
@@ -59,8 +59,13 @@ class EstabelecimentoDao extends Dao
       WHERE Usuario = '{$usuario}'
         AND Senha = {$senha}
     ";
-    // $resultado = mysqli_fetch_array($this->executar($sql));
-    var_dump($this->executar($sql));
+
+    $resultado = $this->executar($sql);
+
+    if ($resultado->num_rows > 0) {
+      $row = $resultado->fetch_array();
+      return $this->consultar();
+    }
   }
 }
 ?>

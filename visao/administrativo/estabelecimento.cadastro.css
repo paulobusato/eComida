@@ -101,7 +101,7 @@ body {
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 320px 50px;
-    padding: 64px 300px;
+    padding: 64px;
     gap: 24px;
 }
 

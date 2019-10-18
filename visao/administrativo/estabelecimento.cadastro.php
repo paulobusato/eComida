@@ -1,5 +1,8 @@
 <?php
     require_once("../../controle/EstabelecimentoAction.php");
+    session_start();
+
+    $estabelecimento = $_SESSION["estabelecimento"];
 ?>
 
 <!DOCTYPE html>
@@ -24,15 +27,15 @@
             <section class="formulario__section formulario__section--cadastro">
                 <article class="formulario__item">
                     <label for="nomeFantasia">Nome Fantasia</label>
-                    <input type="text" class="formulario__input" id="nomeFantasia">
+                    <input type="text" class="formulario__input" id="nomeFantasia" value="<?= $estabelecimento->getNomeFantasia() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="descricao">Razão Social</label>
-                    <input type="text" class="formulario__input" id="descricao">
+                    <input type="text" class="formulario__input" id="descricao" value="<?= $estabelecimento->getRazaoSocial() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="cnpj">CNPJ</label>
-                    <input type="text" class="formulario__input" id="cnpj">
+                    <input type="text" class="formulario__input" id="cnpj" value="<?= $estabelecimento->getCNPJ() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="cnpj">Telefone</label>
