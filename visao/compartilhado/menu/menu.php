@@ -11,9 +11,9 @@
     const sacolaContainer = document.querySelector('.sacola-container');
 
     btnSacola.addEventListener('click', (e) => {
-        cabecalhoTitulo.style.display = 'none';
-        cabecalhoDivider.style.display = 'none';
-        conteudoPrincipal.style.display = 'none';
+        cabecalhoTitulo ? cabecalhoTitulo.style.display = 'none' : '';
+        cabecalhoDivider ? cabecalhoDivider.style.display = 'none' : '';
+        conteudoPrincipal ? conteudoPrincipal.style.display = 'none' : '';
         sacolaContainer.classList.remove('display--none');
     });
 </script>

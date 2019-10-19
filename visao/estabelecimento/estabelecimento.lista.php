@@ -97,7 +97,6 @@
     <script>
         const body = document.querySelector('body');
         const sacolaButton = document.querySelector('.sacola-button');
-        const sacolaContainer = document.querySelector('.sacola-container');
         const voltarIcon = document.querySelector('.voltar__icon');
 
         sacolaButton.addEventListener('click', e => {
