@@ -4,34 +4,6 @@
     grid-template-rows: 33.33% auto 5%;
 }
 
-.cabecalho__navegacao {
-    position: fixed;
-    height: 81px;
-    width: 100%;
-    z-index: 1000;
-    background-color: #087f23;
-    display: grid;
-    grid-template-columns: 20% auto;
-    align-items: center;
-    padding: 0 5%;
-}
-
-.voltar__icon {
-    color: #fff;
-    font-size: 36px;
-}
-
-.cabecalho__logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-.sacola-button {
-    display: none;
-}
-
 .cabecalho__titulo {
     color: #4caf50;
     text-decoration: none;
@@ -45,31 +17,4 @@
 
 .cabecalho__divider {
     grid-row: 3 / 4;
-}
-
-@media only screen  and (min-width : 1224px) {    
-    .cabecalho__navegacao {
-        padding: 0 10%;
-        grid-template-columns: 5% auto 10%;
-    }
-    
-    .voltar__link {
-        display: none;
-    }
-
-    .sacola-button {
-        display: block;
-        justify-self: end;
-        color: #fff;
-        width: 2rem;
-        height: 2rem;
-        background: transparent;
-        border: 1px solid transparent;
-        outline: none;
-        cursor: pointer;
-    }
-    
-    .sacola-button__icon {
-        font-size: 2em;
-    }
 }
