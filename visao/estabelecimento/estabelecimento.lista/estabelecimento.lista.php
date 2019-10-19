@@ -20,7 +20,7 @@
     <?php require_once('/workspaces/eComida/visao/compartilhado/sacola/sacola.php'); ?>
     <section class="estabelecimento-list">
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produto/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -32,7 +32,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produto/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -44,7 +44,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produto/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -56,7 +56,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produto/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -68,7 +68,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produto/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
@@ -80,7 +80,7 @@
             </a>
         </article>
         <article class="estabelecimento-list__item">
-            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
+            <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produto/estabelecimento.produtos.php">
                 <img class="estabelecimento__imagem" src="https://a0.muscache.com/im/pictures/6db93b37-3d4b-49c0-af00-c184a9dd6305.jpg?aki_policy=large" alt="">
                 <p class="estabelecimento__nome">Bobs</p>
                 <p class="estabelecimento__distancia">Distância: 5.5km - IBC</p>
