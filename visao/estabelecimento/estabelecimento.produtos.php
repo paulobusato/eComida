@@ -185,13 +185,8 @@
     const body = document.querySelector('body');
     const pedido = document.querySelector('.pedido');
     const sacolaButton = document.querySelector('.sacola-button');
-    const sacolaContainer = document.querySelector('.sacola-container');
     const pedidoCloseButton = document.querySelector('.pedido_close');
     const voltarIcon = document.querySelector('.voltar__icon');
-    const btnSacola = document.querySelector('#btnSacola');
-    const cabecalhoTitulo = document.querySelector('.cabecalho__titulo');
-    const cabecalhoDivider = document.querySelector('.cabecalho__divider');
-    const conteudoPrincipal = document.querySelector('.conteudo-principal');
 
     addButton.forEach((button) => {
       button.addEventListener('click', (e) => {
@@ -227,13 +222,6 @@
 
     voltarIcon.addEventListener('click', (e) => {
       window.history.back();
-    });
-
-    btnSacola.addEventListener('click', (e) => {
-      cabecalhoTitulo.style.display = 'none';
-      cabecalhoDivider.style.display = 'none';
-      conteudoPrincipal.style.display = 'none';
-      sacolaContainer.classList.remove('display--none');
     });
   </script>
 </body>
