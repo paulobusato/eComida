@@ -97,14 +97,9 @@
     <script>
         const body = document.querySelector('body');
         const sacolaButton = document.querySelector('.sacola-button');
-        const voltarIcon = document.querySelector('.voltar__icon');
 
         sacolaButton.addEventListener('click', e => {
         sacolaContainer.classList.toggle('display--none');
-        });
-
-        voltarIcon.addEventListener('click', (e) => {
-            window.history.back();
         });
     </script>
 </body>

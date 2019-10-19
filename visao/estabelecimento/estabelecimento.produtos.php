@@ -186,7 +186,6 @@
     const pedido = document.querySelector('.pedido');
     const sacolaButton = document.querySelector('.sacola-button');
     const pedidoCloseButton = document.querySelector('.pedido_close');
-    const voltarIcon = document.querySelector('.voltar__icon');
 
     addButton.forEach((button) => {
       button.addEventListener('click', (e) => {
@@ -218,10 +217,6 @@
       background.classList.remove('background');
       background.classList.add('display--none');
       body.classList.remove('display--hidden');
-    });
-
-    voltarIcon.addEventListener('click', (e) => {
-      window.history.back();
     });
   </script>
 </body>
