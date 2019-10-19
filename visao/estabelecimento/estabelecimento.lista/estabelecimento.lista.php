@@ -94,13 +94,6 @@
     </section>
     <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>
     <?php require_once('/workspaces/eComida/visao/compartilhado/menu/menu.php'); ?>
-    <script>
-        const body = document.querySelector('body');
-        const sacolaButton = document.querySelector('.sacola-button');
-
-        sacolaButton.addEventListener('click', e => {
-        sacolaContainer.classList.toggle('display--none');
-        });
-    </script>
+    <script src="estabelecimento.lista.js"></script>
 </body>
 </html>
