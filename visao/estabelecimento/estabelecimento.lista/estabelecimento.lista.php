@@ -94,6 +94,8 @@
     </section>
     <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>
     <?php require_once('/workspaces/eComida/visao/compartilhado/menu/menu.php'); ?>
+    <script src="/visao/compartilhado/navegacao/navegacao.js"></script>
+    <script src="/visao/compartilhado/menu/menu.php"></script>
     <script src="estabelecimento.lista.js"></script>
 </body>
 </html>
