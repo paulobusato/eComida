@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/visao/compartilhado/menu/menu.css">
     <link rel="stylesheet" href="/visao/compartilhado/sacola/sacola.css">
+    <link rel="stylesheet" href="/visao/compartilhado/navegacao/navegacao.css">
     <link rel="stylesheet" href="/visao/compartilhado/cabecalho/cabecalho.css">
     <link rel="stylesheet" href="/visao/compartilhado/rodape/rodape.css">
     <link rel="stylesheet" href="estabelecimento.lista.css">
     <title>Lista de Estabelecimento</title>
 </head>
 <body>
+    <?php require_once('/workspaces/eComida/visao/compartilhado/navegacao/navegacao.php'); ?>
     <?php require_once('/workspaces/eComida/visao/compartilhado/cabecalho/cabecalho.php'); ?>
     <?php require_once('/workspaces/eComida/visao/compartilhado/sacola/sacola.php'); ?>
     <section class="estabelecimento-list">
