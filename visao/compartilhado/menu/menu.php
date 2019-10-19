@@ -1,5 +1,5 @@
 <nav class="menu">
-    <a href="#" class="menu__link"><i class="material-icons menu__icon">home</i></a>
-    <a href="#" class="menu__link"><i class="material-icons menu__icon">search</i></a>
-    <a href="#" class="menu__link"><i class="material-icons menu__icon">shopping_basket</i></a>
+    <button type="button" class="menu__link" id="btnIniciar"><i class="material-icons menu__icon">home</i></button>
+    <button type="button" class="menu__link" id="btnBuscar"><i class="material-icons menu__icon">search</i></button>
+    <button type="button" class="menu__link" id="btnSacola"><i class="material-icons menu__icon">shopping_basket</i></button>
 </nav>

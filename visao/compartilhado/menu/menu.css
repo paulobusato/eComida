@@ -12,7 +12,10 @@
 
 .menu__link {
     color: #000000;
+    background-color: transparent;
+    border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .menu__icon {
