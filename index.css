@@ -97,6 +97,8 @@ html, body {
 }
 
 .categorias__container {
+    padding-top: 24px;
+    height: 350px;
     margin-top: 3rem;
     overflow: auto;
     white-space: nowrap;
@@ -141,6 +143,8 @@ html, body {
 }
 
 .recomendacoes__container {
+    padding-top: 24px;
+    height: 420px;
     margin-top: 3rem;
     overflow: auto;
     white-space: nowrap;
