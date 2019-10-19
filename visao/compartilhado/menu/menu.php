@@ -1,7 +1,7 @@
 <nav class="menu">
-    <button type="button" class="menu__link" id="btnIniciar">
+    <a href="/index.html" class="menu__link" id="btnIniciar">
         <i class="material-icons menu__icon">home</i>
-    </button>
+    </a>
     <button type="button" class="menu__link" id="btnBuscar">
         <i class="material-icons menu__icon">search</i>
     </button>
