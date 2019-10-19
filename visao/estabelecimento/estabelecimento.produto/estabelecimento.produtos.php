@@ -180,7 +180,7 @@
     </main>
   </div>
   <script src="/visao/compartilhado/navegacao/navegacao.js"></script>
-  <script src="/visao/compartilhado/menu/menu.php"></script>
+  <script src="/visao/compartilhado/menu/menu.js"></script>
   <script src="estabelecimento.produtos.js"></script>
 </body>
 </html>
