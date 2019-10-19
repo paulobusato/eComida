@@ -1,9 +1,9 @@
-<header class="cabecalho-principal">
-    <nav class="cabecalho-principal__navegacao">
-        <h1>
-            <a href="/index.html" class="cabecalho-principal__navegacao__titulo">eComida</a>
-        </h1>
-        <a href="/visao/usuarios/login/login.php" class="btn-entrar cabecalho-principal__navegacao__entrar">Entrar</a>
-        <a href="/visao/usuarios/login/login.php" class="icon-entrar"><i class="material-icons">account_circle</i></a>
+<header class="cabecalho">
+    <nav class="cabecalho__navegacao">
+        <i class="material-icons voltar__icon">keyboard_arrow_left</i>
+        <a class="cabecalho__logo" href="/index.html">eComida</a>
+        <button class="sacola-button"><i class="material-icons sacola-button__icon">shopping_cart</i></button>
     </nav>
+    <h1 class="cabecalho__titulo">Salada</h1>
+    <hr class="cabecalho__divider">
 </header>

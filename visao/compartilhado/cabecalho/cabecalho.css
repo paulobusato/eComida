@@ -1,85 +1,75 @@
-.cabecalho-principal {
+.cabecalho {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 33.33% auto 5%;
+}
+
+.cabecalho__navegacao {
+    position: fixed;
+    height: 81px;
     width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-.cabecalho-principal__navegacao {
+    z-index: 1000;
     background-color: #087f23;
-    position: relative;
-    padding: 12px;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 20% auto;
     align-items: center;
+    padding: 0 5%;
 }
 
-.cabecalho-principal__navegacao__titulo {
+.voltar__icon {
+    color: #fff;
+    font-size: 36px;
+}
+
+.cabecalho__logo {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 2em;
-    margin: 0;
 }
 
-.cabecalho-principal__navegacao__entrar {
-    color: #087f23;
-    text-decoration: none;
-    font-size: 1.2rem;
-    width: 140px;
-    height: 50px;
-    font-size: 1rem;
-    border: 1px solid #087f23;
-    color: #087f23;
-    padding: 2px;
-    background-color: #fff;
+.sacola-button {
     display: none;
-    align-items: center;
-    justify-content: center;
+}
+
+.cabecalho__titulo {
+    color: #4caf50;
+    text-decoration: none;
     font-weight: bold;
-    position: absolute;
-    right: 1rem;
-    border-radius: 4px;
+    font-size: 4em;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2 / 3;
 }
 
-.cabecalho-principal__navegacao__entrar:hover {
-    background-color: #087f23;
-    color: #000000;
-    border: 1px solid #087f23;
+.cabecalho__divider {
+    grid-row: 3 / 4;
 }
 
-.icon-entrar {
-    display: block;
-    color: #fff;
-    margin-left: 10p;
-    position: absolute;
-    right: 24px;
-}
-
-.icon-entrar i {
-    font-size: 3em;
-}
-
-@media only screen  and (min-width : 1224px) {
-    .cabecalho-principal {
+@media only screen  and (min-width : 1224px) {    
+    .cabecalho__navegacao {
         padding: 0 10%;
+        grid-template-columns: 5% auto 10%;
     }
     
-    .cabecalho-principal__navegacao {
-        justify-content: center;
-        padding: 2rem 0;
-        background-color: #fff;
-    }
-
-    .cabecalho-principal__navegacao__titulo {
-        color: #087f23;
-    }
-    
-    .cabecalho-principal__navegacao__entrar {
-        display: inline-flex;
-    }
-
-    .icon-entrar {
+    .voltar__link {
         display: none;
+    }
+
+    .sacola-button {
+        display: block;
+        justify-self: end;
+        color: #fff;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: 1px solid transparent;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .sacola-button__icon {
+        font-size: 2em;
     }
 }

@@ -6,58 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/visao/compartilhado/menu/menu.css">
+    <link rel="stylesheet" href="/visao/compartilhado/sacola/sacola.css">
+    <link rel="stylesheet" href="/visao/compartilhado/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="/visao/compartilhado/rodape/rodape.css">
     <link rel="stylesheet" href="estabelecimento.lista.css">
     <title>Lista de Estabelecimento</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__navegacao">
-            <a href="/index.html" class="voltar__link">
-                <i class="material-icons voltar__icon">keyboard_arrow_left</i>
-            </a>
-            <a class="cabecalho__logo" href="/index.html">eComida</a>
-            <button class="sacola-button"><i class="material-icons sacola-button__icon">shopping_cart</i></button>
-        </nav>
-        <h1 class="cabecalho__titulo">Salada</h1>
-        <hr class="cabecalho__divider">
-    </header>
-    <section class="sacola-container display--none">
-        <p class="sacola__texto">Seu pedido em</p>
-        <h3 class="sacola__estabelecimento">Number One Chicken</h3>
-        <hr class="sacola__divider">
-        <section class="sacola-pedidos">
-            <article class="sacola-pedido">
-                <p class="sacola-pedido__descricao"><span>1</span>x Combo p - <span>indicamos para 1 a 2 pessoas</span></p>
-                <p class="sacola-pedido__ingredientes">
-                <span>1x Tiras de filé de coxa e sobrecoxa</span>,
-                <span>1x Arroz branco g</span>,
-                <span>1x Maionese verde</span>
-                </p>
-                <p class="sacola-pedido__preco">R$ 32,99</p>
-                <nav class="sacola-pedido__actions">
-                <button class="sacola-pedido__editar"><i class="material-icons">edit</i></button>
-                <button class="sacola-pedido__remover"><i class="material-icons">remove_circle_outline</i></button>
-                </nav>
-            </article>
-            <hr class="sacola__divider">
-        </section>
-        <section class="sacola-pedidos">
-            <article class="sacola-pedido">
-                <p class="sacola-pedido__descricao"><span>1</span>x Combo p - <span>indicamos para 1 a 2 pessoas</span></p>
-                <p class="sacola-pedido__ingredientes">
-                <span>1x Tiras de filé de coxa e sobrecoxa</span>,
-                <span>1x Arroz branco g</span>,
-                <span>1x Maionese verde</span>
-                </p>
-                <p class="sacola-pedido__preco">R$ 32,99</p>
-                <nav class="sacola-pedido__actions">
-                <button class="sacola-pedido__editar"><i class="material-icons">edit</i></button>
-                <button class="sacola-pedido__remover"><i class="material-icons">remove_circle_outline</i></button>
-                </nav>
-            </article>
-            <hr class="sacola__divider">
-        </section>
-    </section>
+    <?php require_once('/workspaces/eComida/visao/compartilhado/cabecalho/cabecalho.php'); ?>
+    <?php require_once('/workspaces/eComida/visao/compartilhado/sacola/sacola.php'); ?>
     <section class="estabelecimento-list">
         <article class="estabelecimento-list__item">
             <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produtos.php">
@@ -132,22 +90,20 @@
             </a>
         </article>
     </section>
-    <footer class="rodape">
-        <span class="copyright">2019 &copy; Todos os direitos reservados</span>
-        <span>Buzato Tecnologia</span>
-    </footer>
-    <nav class="menu">
-        <a href="#" class="menu__link"><i class="material-icons menu__icon">home</i></a>
-        <a href="#" class="menu__link"><i class="material-icons menu__icon">search</i></a>
-        <a href="#" class="menu__link"><i class="material-icons menu__icon">shopping_basket</i></a>
-    </nav>
+    <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>
+    <?php require_once('/workspaces/eComida/visao/compartilhado/menu/menu.php'); ?>
     <script>
-        var body = document.querySelector('body');
-        var sacolaButton = document.querySelector('.sacola-button');
-        var sacolaContainer = document.querySelector('.sacola-container');
+        const body = document.querySelector('body');
+        const sacolaButton = document.querySelector('.sacola-button');
+        const sacolaContainer = document.querySelector('.sacola-container');
+        const voltarIcon = document.querySelector('.voltar__icon');
 
         sacolaButton.addEventListener('click', e => {
         sacolaContainer.classList.toggle('display--none');
+        });
+
+        voltarIcon.addEventListener('click', (e) => {
+            window.history.back();
         });
     </script>
 </body>

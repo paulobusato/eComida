@@ -14,68 +14,9 @@ html, body {
 }
 
 body {
-    /* background-color: #efefef; */
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 30% auto 5%;
-}
-
-.cabecalho {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 33.33% auto 5%;
-}
-
-.cabecalho__navegacao {
-    position: fixed;
-    height: 81px;
-    width: 100%;
-    z-index: 1000;
-    background-color: #087f23;
-    display: grid;
-    grid-template-columns: 20% auto;
-    align-items: center;
-    padding: 0 5%;
-}
-
-.voltar__link {
-    color: #fff;
-    outline: none;
-}
-
-.voltar__icon {
-    font-size: 36px;
-}
-
-.cabecalho__logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-.sacola-button {
-    display: none;
-}
-
-.cabecalho__titulo {
-    color: #4caf50;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 4em;
-    margin: 0;
-    justify-self: center;
-    align-self: center;
-    grid-row: 2 / 3;
-}
-
-.cabecalho__divider {
-    grid-row: 3 / 4;
-}
-
-.run-animation {
-    animation-name: slidein;
-    animation-duration: 0.7s;
 }
 
 .display--hidden {
@@ -84,17 +25,6 @@ body {
 
 .display--none {
     display: none;
-}
-
-@keyframes slidein {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 .estabelecimento-list {
@@ -148,142 +78,13 @@ body {
     color: #e7a74e;
 }
 
-.rodape {
-    display: none;
-}
-
-.menu {
-    position: fixed;
-    bottom: 0;
-    height: 10%;
-    width: 100%;
-    background-color: #4caf50;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-}
-
-.menu__link {
-    color: #000000;
-    outline: none;
-}
-
-.menu__icon {
-    font-size: 36px;
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
-}
-
 @media only screen  and (min-width : 1224px) {
     body {
         grid-template-rows: 25% auto 5%;
     }
     
-    .cabecalho__navegacao {
-        padding: 0 10%;
-    }
-    
-    .voltar__link {
-        display: none;
-    }
-
-    .sacola-button {
-        display: block;
-        justify-self: end;
-        color: #fff;
-        width: 2rem;
-        height: 2rem;
-        background: transparent;
-        border: 1px solid transparent;
-        outline: none;
-        cursor: pointer;
-    }
-    
-    .sacola-button__icon {
-        font-size: 2em;
-    }
-    
-    .sacola-container {
-        height: 500px;
-        width: 500px;
-        position: absolute;
-        right: 10%;
-        top: 5rem;
-        color: #000000;
-        padding: 1rem;
-        background-color: #80e27e;
-        border-radius: .3rem;
-        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, .12);
-        z-index: 10000;
-    }
-    
-    .sacola__estabelecimento {
-        margin: 1rem 0;
-    }
-    
-    .sacola-pedido {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100px;
-        padding-right: 3rem;
-    }
-    
-    .sacola-pedido__descricao {
-        font-weight: bold;
-    }
-    
-    .sacola-pedido__ingredientes {
-        font-size: .9em;
-    }
-    
-    .sacola-pedido__preco {
-        font-weight: bold;
-    }
-    
-    .sacola-pedido__actions {
-        position: absolute;
-        right: .5rem;
-        top: 0;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    
-    .sacola-pedido__editar,
-    .sacola-pedido__remover {
-        background-color: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
-    
-    .sacola__divider {
-        margin: 1rem 0;
-        border: 1px solid #4caf50;
-    }
-
     .estabelecimento-list {
-        padding: 0 10%;
-        margin: 2%;
-    }
-
-    .rodape {
-        background-color: #356859;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #000000;
-        padding: 0 1rem;
-        font-size: 1.1rem;
-    }
-
-    .menu {
-        display: none;
+        padding: 0 150px;
+        margin: 0;
     }
 }
