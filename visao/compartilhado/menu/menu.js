@@ -11,6 +11,5 @@ btnSacola.addEventListener('click', (e) => {
     conteudoPrincipal ? conteudoPrincipal.style.display = 'none' : '';
     estabelecimentoLista? estabelecimentoLista.style.display = 'none' : '';
     body.style.gridTemplateRows = '81px auto';
-    body.style.gap = '0';
     sacolaContainer.classList.remove('display--none');
 });

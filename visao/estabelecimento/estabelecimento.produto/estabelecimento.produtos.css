@@ -17,11 +17,11 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 30% auto 5%;
-    gap: 3rem;
 }
 
 .conteudo-principal {
     width: 100%;
+    margin-top: 10%;
     padding-bottom: 15%;
 }
 
