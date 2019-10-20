@@ -16,7 +16,67 @@ html, body {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% auto 5%;
+  grid-template-rows: 140px auto;
+}
+
+.cabecalho-principal {
+  width: 100%;
+  margin: 0;
+}
+
+.cabecalho-principal__navegacao {
+  background-color: #087f23;
+  position: relative;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cabecalho-principal__navegacao__titulo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0;
+}
+
+.cabecalho-principal__navegacao__entrar {
+  color: #087f23;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 140px;
+  height: 50px;
+  font-size: 1rem;
+  border: 1px solid #087f23;
+  color: #087f23;
+  padding: 2px;
+  background-color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  border-radius: 4px;
+}
+
+.cabecalho-principal__navegacao__entrar:hover {
+  background-color: #087f23;
+  color: #000000;
+  border: 1px solid #087f23;
+}
+
+.icon-entrar {
+  display: block;
+  color: #fff;
+  margin-left: 10p;
+  position: absolute;
+  right: 24px;
+}
+
+.icon-entrar i {
+  font-size: 3em;
 }
 
 .imagem-fundo {
@@ -67,7 +127,7 @@ body {
   padding: 24px 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% auto 20%;
+  grid-template-rows: 30% auto;
   justify-items: center;
   align-items: center;
 }
@@ -80,10 +140,10 @@ body {
 }
 
 .entrar-formulario {
-  height: 50%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-content: center;
   gap: 24px;
 }
@@ -93,12 +153,13 @@ body {
   border-radius: .5rem;
   padding: .5rem;
   width: 17rem;
+  height: 100%;
   outline: none;
 }
 
 .entrar__button {
-  height: 3rem;
-  width: 10rem;
+  height: 100%;
+  width: 100%;
   background-color: #087f23;
   display: flex;
   justify-content: center;
@@ -109,6 +170,7 @@ body {
   border: 1px solid #087f23;
   outline: none;
   cursor: pointer;
+  align-self: center;
 }
 
 .entrar__button:hover {
@@ -154,6 +216,33 @@ body {
 }
 
 @media only screen  and (min-width : 1224px) {
+  body {
+    grid-template-rows: 10% auto 5%;
+  }
+
+  .cabecalho-principal {
+    padding: 0 10%;
+    margin-bottom: 3rem;
+  }
+
+  .cabecalho-principal__navegacao {
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: #fff;
+  }
+
+  .cabecalho-principal__navegacao__titulo {
+    color: #087f23;
+  }
+
+  .cabecalho-principal__navegacao__entrar {
+    display: inline-flex;
+  }
+
+  .icon-entrar {
+    display: none;
+  }
+  
   .cabecalho-principal__navegacao__entrar {
     display: none;
   }
