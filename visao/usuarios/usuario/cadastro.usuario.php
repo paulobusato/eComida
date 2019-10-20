@@ -6,13 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="/visao/compartilhado/cabecalho/cabecalho.css">
   <link rel="stylesheet" href="/visao/compartilhado/rodape/rodape.css">
   <link rel="stylesheet" href="cadastro.usuario.css">
   <title>Login - eComida</title>
 </head>
 <body>
-    <?php require_once('/workspaces/eComida/visao/compartilhado/cabecalho/cabecalho.php'); ?>
+    <header class="cabecalho-principal">
+        <nav class="cabecalho-principal__navegacao">
+            <h1>
+                <a href="/index.html" class="cabecalho-principal__navegacao__titulo">eComida</a>
+            </h1>
+            <a href="/visao/usuarios/login/login.php" class="btn-entrar cabecalho-principal__navegacao__entrar">Entrar</a>
+            <a href="/visao/usuarios/login/login.php" class="icon-entrar"><i class="material-icons">account_circle</i></a>
+        </nav>
+        <hr class="cabecalho-principal__divisor">
+    </header>
     <form action="" class="cadastro-formulario">
         <h2 class="cadastro-formulario__titulo">Cadastro</h2>
         <address>
