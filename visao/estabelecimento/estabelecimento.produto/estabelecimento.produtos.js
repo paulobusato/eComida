@@ -5,6 +5,19 @@ const pedido = document.querySelector('.pedido');
 const sacolaButton = document.querySelector('.sacola-button');
 const pedidoCloseButton = document.querySelector('.pedido_close');
 
+const PedidoAddProduto = document.querySelector('.pedido__add-produto');
+const PedidoRemoverProduto = document.querySelector('.pedido__remove-produto');
+const PedidoQuantidadeProduto = document.querySelector('.quantidade__produto');
+
+PedidoAddProduto.addEventListener('click', (e) => {
+    PedidoQuantidadeProduto.textContent = parseInt(PedidoQuantidadeProduto.textContent) + 1;
+});
+
+PedidoRemoverProduto.addEventListener('click', (e) => {
+    if (parseInt(PedidoQuantidadeProduto.textContent) > 0)
+        PedidoQuantidadeProduto.textContent = parseInt(PedidoQuantidadeProduto.textContent) - 1;
+});
+
 addButton.forEach((button) => {
     button.addEventListener('click', (e) => {
     e.preventDefault();
@@ -19,7 +32,6 @@ addButton.forEach((button) => {
 });
 
 background.addEventListener('click', (e) => {
-    e.preventDefault();
     if (e.target.id !== 'background') return;
     background.classList.remove('background');
     background.classList.add('display--none');

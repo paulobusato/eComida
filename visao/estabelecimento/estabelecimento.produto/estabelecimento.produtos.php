@@ -141,16 +141,19 @@
           </header>
           <main class="ingrediente-individual-lista">
             <article class="ingrediente-individual">
-              <input class="ingrediente-individual__checkbox" type="checkbox" name="item1" id="item1">
               <label for="item1" class="ingrediente-individual__descricao">Lombo de porco</label>
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="item1" id="item1">
+              <div class="ingrediente-individual__checkbox-icon"></div>
             </article>
             <article class="ingrediente-individual">
-              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item2">
               <label for="item2" class="ingrediente-individual__descricao">Linguiça de churrasco</label>
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item2">
+              <div class="ingrediente-individual__checkbox-icon"></div>
             </article>
             <article class="ingrediente-individual">
-              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item3">
               <label for="item3" class="ingrediente-individual__descricao">Carne de boi</label>
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item3">
+              <div class="ingrediente-individual__checkbox-icon"></div>
             </article>
           </main>
         </article>
@@ -163,8 +166,9 @@
           </header>
           <main class="ingrediente-individual-lista">
             <article class="ingrediente-individual">
-              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item4">
               <label for="item4" class="ingrediente-individual__descricao">Lombo de porco</label>
+              <input class="ingrediente-individual__checkbox" type="checkbox" name="" id="item4">
+              <div class="ingrediente-individual__checkbox-icon"></div>
             </article>
           </main>
         </article>
