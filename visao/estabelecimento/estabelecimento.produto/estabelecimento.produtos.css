@@ -190,7 +190,8 @@ body {
 }
 
 .ingrediente-individual__checkbox:checked ~ .ingrediente-individual__checkbox-icon {
-    background-color: red;
+    background-color: #4caf50;
+    border: 2px solid #efefef;
 }
 
 .pedido__actions {
