@@ -2,10 +2,13 @@
     color: #000000;
     padding: 1rem;
     background-color: #80e27e;
+    display: grid;
+    grid-template-rows: 18px 48px 24px auto 32px;
+    align-items: center;
 }
 
-.sacola__estabelecimento {
-    margin: 1rem 0;
+.sacola-pedidos {
+    height: 100%;
 }
 
 .sacola-pedido {
@@ -50,6 +53,22 @@
 .sacola__divider {
     margin: 1rem 0;
     border: 1px solid #4caf50;
+}
+
+.sacola_acoes {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+}
+
+.sacola-btn {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    color: #087f23;
+    cursor: pointer;
+    outline: none;
 }
 
 @media only screen  and (min-width : 1224px) {
