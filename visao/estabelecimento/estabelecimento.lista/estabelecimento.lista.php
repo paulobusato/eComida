@@ -14,8 +14,8 @@
     <title>Lista de Estabelecimento</title>
 </head>
 <body>
-    <?php require_once('/workspaces/eComida/visao/compartilhado/navegacao/navegacao.php'); ?>
-    <?php require_once('/workspaces/eComida/visao/compartilhado/cabecalho/cabecalho.php'); ?>
+    <?php require_once('../../compartilhado/navegacao/navegacao.php'); ?>
+    <?php require_once('../../compartilhado/cabecalho/cabecalho.php'); ?>
     <section class="estabelecimento-list">
         <article class="estabelecimento-list__item">
             <a class="estabelecimento__link" href="/visao/estabelecimento/estabelecimento.produto/estabelecimento.produtos.php">
@@ -90,8 +90,8 @@
             </a>
         </article>
     </section>
-    <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>
-    <?php require_once('/workspaces/eComida/visao/compartilhado/menu/menu.php'); ?>
+    <?php require_once('../../compartilhado/rodape/rodape.php'); ?>
+    <?php require_once('../../compartilhado/menu/menu.php'); ?>
     <script src="/visao/compartilhado/navegacao/navegacao.js"></script>
     <script src="/visao/compartilhado/menu/menu.js"></script>
     <script src="estabelecimento.lista.js"></script>

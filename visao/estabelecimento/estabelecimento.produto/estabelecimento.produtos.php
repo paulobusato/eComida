@@ -14,8 +14,8 @@
   <title>Estabelecimento - Produtos</title>
 </head>
 <body>
-  <?php require_once('/workspaces/eComida/visao/compartilhado/navegacao/navegacao.php'); ?>
-  <?php require_once('/workspaces/eComida/visao/compartilhado/cabecalho/cabecalho.php'); ?>
+  <?php require_once('../../compartilhado/navegacao/navegacao.php'); ?>
+  <?php require_once('../../compartilhado/cabecalho/cabecalho.php'); ?>
   <main class="conteudo-principal">
     <section class="destaque">
       <header class="destaque__titulo-container">
@@ -119,8 +119,8 @@
       </article>
     </section>
   </main>
-  <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>
-  <?php require_once('/workspaces/eComida/visao/compartilhado/menu/menu.php'); ?>
+  <?php require_once('../../compartilhado/rodape/rodape.php'); ?>
+  <?php require_once('../../compartilhado/menu/menu.php'); ?>
   <div id="background" class="display--none">
     <main class="pedido run-animation">
       <header class="pedido__header">
