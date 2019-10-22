@@ -3,7 +3,7 @@
     session_start();
 
     $estabelecimento = $_SESSION["estabelecimento"];
-    unset($_SESSION["estabelecimento"]);
+    // unset($_SESSION["estabelecimento"]);
 ?>
 
 <!DOCTYPE html>

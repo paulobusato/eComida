@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/visao/compartilhado/menu/menu.css">
-  <link rel="stylesheet" href="/visao/compartilhado/sacola/sacola.css">
   <link rel="stylesheet" href="/visao/compartilhado/navegacao/navegacao.css">
   <link rel="stylesheet" href="/visao/compartilhado/cabecalho/cabecalho.css">
   <link rel="stylesheet" href="/visao/compartilhado/rodape/rodape.css">
@@ -17,7 +16,6 @@
 <body>
   <?php require_once('/workspaces/eComida/visao/compartilhado/navegacao/navegacao.php'); ?>
   <?php require_once('/workspaces/eComida/visao/compartilhado/cabecalho/cabecalho.php'); ?>
-  <?php require_once('/workspaces/eComida/visao/compartilhado/sacola/sacola.php'); ?>
   <main class="conteudo-principal">
     <section class="destaque">
       <header class="destaque__titulo-container">
