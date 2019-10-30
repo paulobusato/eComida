@@ -23,15 +23,10 @@
       <hr class="cabecalho-principal__divisor">
   </header>
   <main class="container animated bounceInLeft">
-    <section class="cadastro">
-      <h2 class="cadastro-titulo">Bem-vindo novamente</h2>
-      <p class="cadastro-subtitulo">Para realizar pedidos, faça o seu cadastro agora</p>
-      <a href="../usuario/cadastro.usuario.php" class="btnCadastrar">Cadastrar</a>
-    </section>
     <section class="entrar">
       <h1 class="entrar__titulo">Entrar</h1>
       <form action="/controle/LoginAction.php" method="POST" class="entrar-formulario">
-        <input class="entrar__input" type="text" name="usuario" id="usuario" placeholder="Usuário">
+        <input class="entrar__input" type="text" name="email" id="email" placeholder="Email">
         <input class="entrar__input" type="password" name="senha" id="senha" placeholder="Senha">
         <button class="entrar__button" type="submit" class="btnEntrar">Entrar</button>
       </form>

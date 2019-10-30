@@ -4,11 +4,15 @@ require_once("../modelo/dao/EstabelecimentoDao.php");
 
 session_start();
 
-$usuario = $_POST['usuario'];
+$email = $_POST['email'];
 $senha = $_POST['senha'];
 
 $estabelecimentoDao = new EstabelecimentoDao();
-$estabelecimento = $estabelecimentoDao->login($usuario, $senha);
+$estabelecimento = $estabelecimentoDao->login($email, $senha);
+
+if ($estabelecimento == null) {
+    header("Location: ../visao/administrativo/estabelecimento.cadastro.php");    
+}
 
 $_SESSION["estabelecimento"] = $estabelecimento;
 

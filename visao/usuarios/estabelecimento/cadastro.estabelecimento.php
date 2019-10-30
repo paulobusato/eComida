@@ -21,26 +21,31 @@
         </nav>
         <hr class="cabecalho-principal__divisor">
     </header>
-    <form action="" class="cadastro-formulario">
+    <form action="/controle/EstabelecimentoAction.php" method="POST" class="cadastro-formulario">
         <h2 class="cadastro-formulario__titulo">Cadastro</h2>
         <address>
             <section class="primeiro-bloco">
-                <h3>Pessoal</h3>
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Sobrenome">
-                <input type="tel" placeholder="Telefone">
+                <h3>Básico</h3>
+                <input type="text" name="razaoSocial" placeholder="Razao Social">
+                <input type="text" name="nomeFantasia" placeholder="Nome Fantasia">
+                <input type="number" name="cnpj" placeholder="CNPJ">
+                <input type="tel" name="telefone" placeholder="Telefone">
+                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="usuario" placeholder="Usuário">
+                <input type="password" name="senha" placeholder="Senha">
                 </section>
                 <section class="segundo-bloco">
-                <h3>Endereço de entrega</h3>
-                <input type="text" placeholder="Logradouro">
-                <input type="text" placeholder="Numero">
-                <input type="text" placeholder="Bairro">
-                <input type="text" placeholder="Cidade">
+                <h3>Endereço</h3>
+                <input type="number" name="cep" placeholder="CEP">
+                <input type="text" name="logradouro" placeholder="Logradouro">
+                <input type="text" name="numero" placeholder="Numero">
+                <input type="text" name="bairro" placeholder="Bairro">
+                <input type="text" name="cidade" placeholder="Cidade">
             </section>
         </address>
         <section class="cadastro-navegacao">
             <a href="/visao/usuarios/login/login.php" class="btnCancelar">Cancelar</a>
-            <a href="#" class="btnConfirmar">Confirmar</a>
+            <button type="submit" name="btnCadastrar" class="btnConfirmar">Confirmar</button>
         </section>
     </form>
   <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>

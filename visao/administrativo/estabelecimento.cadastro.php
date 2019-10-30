@@ -1,7 +1,7 @@
 <?php
-    require_once("../../controle/EstabelecimentoAction.php");
+    require_once("/workspaces/eComida/controle/EstabelecimentoAction.php");
     session_start();
-
+    
     $estabelecimento = $_SESSION["estabelecimento"];
     // unset($_SESSION["estabelecimento"]);
 ?>
@@ -40,29 +40,33 @@
                 </article>
                 <article class="formulario__item">
                     <label for="cnpj">Telefone</label>
-                    <input type="text" class="formulario__input" id="cnpj">
+                    <input type="text" class="formulario__input" id="cnpj" value="<?= $estabelecimento->getTelefone() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="cnpj">Email</label>
-                    <input type="text" class="formulario__input" id="cnpj">
+                    <input type="text" class="formulario__input" id="cnpj" value="<?= $estabelecimento->getEmail() ?>">
                 </article>
             </section>
             <section class="formulario__section formulario__section--endereco">
                 <article class="formulario__item">
-                    <label for="cnpj">Endereco</label>
-                    <input type="text" class="formulario__input" id="cnpj">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" class="formulario__input" id="logradouro" value="<?= $estabelecimento->getLogradouro() ?>">
                 </article>
                 <article class="formulario__item">
-                    <label for="cnpj">Bairro</label>
-                    <input type="text" class="formulario__input" id="cnpj">
+                    <label for="numero">Numero</label>
+                    <input type="text" class="formulario__input" id="numero" value="<?= $estabelecimento->getNumero() ?>">
                 </article>
                 <article class="formulario__item">
-                    <label for="cnpj">Cidade</label>
-                    <input type="text" class="formulario__input" id="cnpj">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="formulario__input" id="bairro" value="<?= $estabelecimento->getBairro() ?>">
                 </article>
                 <article class="formulario__item">
-                    <label for="cnpj">CEP</label>
-                    <input type="text" class="formulario__input" id="cnpj">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="formulario__input" id="cidade" value="<?= $estabelecimento->getCidade() ?>">
+                </article>
+                <article class="formulario__item">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="formulario__input" id="cep" value="<?= $estabelecimento->getCEP() ?>">
                 </article>
             </section>
             <nav class="formulario_actions">

@@ -1,5 +1,29 @@
 <?php
-	require_once("../../modelo/dao/EstabelecimentoDao.php");
+require_once("/workspaces/eComida/modelo/dao/EstabelecimentoDao.php");
+require_once("/workspaces/eComida/modelo/entidade/Estabelecimento.php");
+
+// var_dump($_POST);
+
+if (isset($_POST["btnCadastrar"])) {
+	$estabelecimentoDao = new EstabelecimentoDao();
+	
+	$estabelecimento = new Estabelecimento(
+		$_POST["razaoSocial"], 
+		$_POST["nomeFantasia"], 
+		$_POST["cnpj"],
+		"P",
+		$_POST["email"],
+		$_POST["senha"],
+		$_POST["telefone"],
+		$_POST["cep"],
+		$_POST["logradouro"],
+		$_POST["numero"],
+		$_POST["bairro"],
+		$_POST["cidade"],
+	);
+
+	$estabelecimentoDao->inserir($estabelecimento);
+}
 
 // var_dump($_POST);
 

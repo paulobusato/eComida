@@ -67,6 +67,33 @@ body {
   border: 1px solid #087f23;
 }
 
+.cabecalho-principal__navegacao__estabelecimento {
+  font-size: 1.2rem;
+  height: 50px;
+  font-size: 1rem;
+  padding: 2px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  display: inline-flex;
+  text-decoration: none;
+  padding: 16px;
+  line-height: 1.25em;
+  border-radius: 4px;
+  width: 250px;
+  background-color: #FD5523;
+  color: #fff;
+}
+
+.cabecalho-principal__navegacao__estabelecimento:hover {
+  background-color: white;
+  border: 1px solid #FD5523;
+  color: #FD5523;
+}
+
 .icon-entrar {
   display: block;
   color: #fff;
