@@ -21,26 +21,30 @@
         </nav>
         <hr class="cabecalho-principal__divisor">
     </header>
-    <form action="" class="cadastro-formulario">
+    <form action="/controle/ClienteAction.php" method="POST" class="cadastro-formulario">
         <h2 class="cadastro-formulario__titulo">Cadastro</h2>
         <address>
             <section class="primeiro-bloco">
                 <h3>Pessoal</h3>
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Sobrenome">
-                <input type="tel" placeholder="Telefone">
+                <input type="text" name="nome" placeholder="Nome Completo">
+                <input type="tel" name="telefone" placeholder="Telefone">
+                <input type="text" name="cpf" placeholder="CPF">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="senha" placeholder="Senha">
                 </section>
                 <section class="segundo-bloco">
                 <h3>Endereço de entrega</h3>
-                <input type="text" placeholder="Logradouro">
-                <input type="text" placeholder="Numero">
-                <input type="text" placeholder="Bairro">
-                <input type="text" placeholder="Cidade">
+                <input type="text" name="cep" placeholder="CEP">
+                <input type="text" name="logradouro" placeholder="Logradouro">
+                <input type="text" name="numero" placeholder="Numero">
+                <input type="text" name="bairro" placeholder="Bairro">
+                <input type="text" name="cidade" placeholder="Cidade">
+                <input type="text" name="uf" placeholder="UF">
             </section>
         </address>
         <section class="cadastro-navegacao">
             <a href="/visao/usuarios/login/login.php" class="btnCancelar">Cancelar</a>
-            <a href="#" class="btnConfirmar">Confirmar</a>
+            <button type="submit" class="btnCadastrar" name="btnCadastrar">Confirmar</button>
         </section>
     </form>
   <?php require_once('/workspaces/eComida/visao/compartilhado/rodape/rodape.php'); ?>

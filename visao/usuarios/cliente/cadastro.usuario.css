@@ -137,7 +137,7 @@ body {
 
 @media only screen  and (min-width : 1224px) {
     body {
-        grid-template-rows: 10% auto 5%;
+        grid-template-rows: 200px auto 5%;
     }
 
     .cabecalho-principal {

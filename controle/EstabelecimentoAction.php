@@ -2,12 +2,12 @@
 require_once("/workspaces/eComida/modelo/dao/EstabelecimentoDao.php");
 require_once("/workspaces/eComida/modelo/entidade/Estabelecimento.php");
 
-// var_dump($_POST);
+session_start();
 
 if (isset($_POST["btnCadastrar"])) {
 	$estabelecimentoDao = new EstabelecimentoDao();
 	
-	$estabelecimento = new Estabelecimento(
+	$novoEstabelecimento = new Estabelecimento(
 		$_POST["razaoSocial"], 
 		$_POST["nomeFantasia"], 
 		$_POST["cnpj"],
@@ -22,7 +22,11 @@ if (isset($_POST["btnCadastrar"])) {
 		$_POST["cidade"],
 	);
 
-	$estabelecimentoDao->inserir($estabelecimento);
+	$estabelecimentoDao->inserir($novoEstabelecimento);
+	
+	$_SESSION["estabelecimento"] = $estabelecimentoDao->login($_POST["email"], $_POST["senha"]);;
+
+	header('Location: /visao/administrativo/pedido.lista.php');
 }
 
 // var_dump($_POST);

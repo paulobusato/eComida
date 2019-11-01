@@ -10,8 +10,9 @@ class Usuario
     private $numero;
     private $bairro;
     private $cidade;
+    private $uf;
 
-    public function __construct($email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade)
+    public function __construct($email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade, $uf)
     {
         $this->email = $email;
         $this->senha = $senha;
@@ -21,6 +22,7 @@ class Usuario
         $this->numero = $numero;
         $this->bairro = $bairro;
         $this->cidade = $cidade;
+        $this->uf = $uf;
     }
 
     public function getEmail()
@@ -61,6 +63,11 @@ class Usuario
     public function getCidade()
     {
         return $this->cidade;
+    }
+
+    public function getUF()
+    {
+        return $this->uf;
     }
 }
 

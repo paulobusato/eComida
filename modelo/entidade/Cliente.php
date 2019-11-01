@@ -4,14 +4,12 @@ require_once('/workspaces/eComida/modelo/entidade/Usuario.php');
 class Cliente extends Usuario
 {
     private $nome;
-    private $sobrenome;
     private $cpf;
 
-    public function __construct($nome, $sobrenome, $cpf, $email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade)
+    public function __construct($nome, $cpf, $email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade, $uf)
     {
-        parent::__construct($email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade);
+        parent::__construct($email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade, $uf);
         $this->nome = $nome;
-        $this->sobrenome = $sobrenome;
         $this->cpf = $cpf;
     }
 
@@ -20,9 +18,9 @@ class Cliente extends Usuario
         return $this->nome;
     }
     
-    public function getSobrenome()
+    public function getCPF()
     {
-        return $this->sobrenome;
+        return $this->cpf;
     }
 }
 
