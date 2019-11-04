@@ -15,7 +15,7 @@
   <header class="cabecalho-principal">
       <nav class="cabecalho-principal__navegacao">
           <h1>
-              <a href="/index.html" class="cabecalho-principal__navegacao__titulo">eComida</a>
+              <a href="/index.php" class="cabecalho-principal__navegacao__titulo">eComida</a>
           </h1>
           <a href="/visao/usuarios/login/login.php" class="btn-entrar cabecalho-principal__navegacao__entrar">Entrar</a>
           <a href="/visao/usuarios/estabelecimento/login/login.php" class="btn-entrar cabecalho-principal__navegacao__estabelecimento">Sou estabelecimento</a>
