@@ -6,7 +6,7 @@ class Cliente extends Usuario
     private $nome;
     private $cpf;
 
-    public function __construct($nome, $cpf, $email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade, $uf)
+    public function __construct($nome = '', $cpf = '', $email  = '', $senha  = '', $telefone  = '', $cep  = '', $logradouro  = '', $numero  = '', $bairro  = '', $cidade  = '', $uf = '')
     {
         parent::__construct($email, $senha, $telefone, $cep, $logradouro, $numero, $bairro, $cidade, $uf);
         $this->nome = $nome;

@@ -1,21 +1,22 @@
 <?php
 
-class Produto
+class Componente
 {
-    private $idProduto;
+    private $idComponente;
     private $descricao;
     private $valor;
 
-    public function __construct($idProduto, $descricao, $valor)
+
+    public function __construct($idComponente, $descricao, $valor)
     {
-        $this->idProduto = $idProduto;
+        $this->idComponente = $idComponente;
         $this->descricao = $descricao;
         $this->valor = $valor;
     }
 
-    public function getIdProduto()
+    public function getIdComponente()
     {
-        return $this->idProduto;
+        return $this->idComponente;
     }
     
     public function getDescricao()

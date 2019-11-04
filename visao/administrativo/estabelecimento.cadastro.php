@@ -3,7 +3,6 @@
     session_start();
     
     $estabelecimento = $_SESSION["estabelecimento"];
-    // unset($_SESSION["estabelecimento"]);
 ?>
 
 <!DOCTYPE html>
@@ -28,49 +27,53 @@
             <section class="formulario__section formulario__section--cadastro">
                 <article class="formulario__item">
                     <label for="nomeFantasia">Nome Fantasia</label>
-                    <input type="text" class="formulario__input" id="nomeFantasia" value="<?= $estabelecimento->getNomeFantasia() ?>">
+                    <input type="text" class="formulario__input" id="nomeFantasia" name="nomeFantasia" value="<?= $estabelecimento->getNomeFantasia() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="descricao">Razão Social</label>
-                    <input type="text" class="formulario__input" id="descricao" value="<?= $estabelecimento->getRazaoSocial() ?>">
+                    <input type="text" class="formulario__input" id="razaoSocial" name="razaoSocial" value="<?= $estabelecimento->getRazaoSocial() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="cnpj">CNPJ</label>
-                    <input type="text" class="formulario__input" id="cnpj" value="<?= $estabelecimento->getCNPJ() ?>">
+                    <input type="text" class="formulario__input" id="cnpj" name="cnpj" value="<?= $estabelecimento->getCNPJ() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="cnpj">Telefone</label>
-                    <input type="text" class="formulario__input" id="cnpj" value="<?= $estabelecimento->getTelefone() ?>">
+                    <input type="text" class="formulario__input" id="telefone" name="telefone" value="<?= $estabelecimento->getTelefone() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="cnpj">Email</label>
-                    <input type="text" class="formulario__input" id="cnpj" value="<?= $estabelecimento->getEmail() ?>">
+                    <input type="text" class="formulario__input" id="email" name="email" value="<?= $estabelecimento->getEmail() ?>">
                 </article>
             </section>
             <section class="formulario__section formulario__section--endereco">
                 <article class="formulario__item">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="formulario__input" id="cep" name="cep" value="<?= $estabelecimento->getCEP() ?>">
+                </article>
+                <article class="formulario__item">
                     <label for="logradouro">Logradouro</label>
-                    <input type="text" class="formulario__input" id="logradouro" value="<?= $estabelecimento->getLogradouro() ?>">
+                    <input type="text" class="formulario__input" id="logradouro" name="logradouro" value="<?= $estabelecimento->getLogradouro() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="numero">Numero</label>
-                    <input type="text" class="formulario__input" id="numero" value="<?= $estabelecimento->getNumero() ?>">
+                    <input type="text" class="formulario__input" id="numero" name="numero" value="<?= $estabelecimento->getNumero() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="bairro">Bairro</label>
-                    <input type="text" class="formulario__input" id="bairro" value="<?= $estabelecimento->getBairro() ?>">
+                    <input type="text" class="formulario__input" id="bairro" name="bairro" value="<?= $estabelecimento->getBairro() ?>">
                 </article>
                 <article class="formulario__item">
                     <label for="cidade">Cidade</label>
-                    <input type="text" class="formulario__input" id="cidade" value="<?= $estabelecimento->getCidade() ?>">
+                    <input type="text" class="formulario__input" id="cidade" name="cidade" value="<?= $estabelecimento->getCidade() ?>">
                 </article>
                 <article class="formulario__item">
-                    <label for="cep">CEP</label>
-                    <input type="text" class="formulario__input" id="cep" value="<?= $estabelecimento->getCEP() ?>">
+                    <label for="cidade">UF</label>
+                    <input type="text" class="formulario__input" id="uf" name="uf" value="<?= $estabelecimento->getUF() ?>">
                 </article>
             </section>
             <nav class="formulario_actions">
-                <button class="btn-action action__cancelar">Cancelar</button>
+                <button type="submit" name="btnExcluir" class="btn-action action__excluir">Excluir</button>
                 <button type="submit" name="btnSalvar" class="btn-action action__salvar">Salvar</button>
             </nav>
         </form>

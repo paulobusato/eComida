@@ -34,7 +34,7 @@
       <form action="/controle/LoginAction.php" method="POST" class="entrar-formulario">
         <input class="entrar__input" type="text" name="email" id="email" placeholder="Email">
         <input class="entrar__input" type="password" name="senha" id="senha" placeholder="Senha">
-        <button class="entrar__button" type="submit" class="btnEntrar">Entrar</button>
+        <button class="entrar__button" type="submit" name="btnEntrarCliente">Entrar</button>
       </form>
     </section>
   </main>

@@ -4,10 +4,11 @@ require_once("/workspaces/eComida/modelo/entidade/Estabelecimento.php");
 
 session_start();
 
-if (isset($_POST["btnCadastrar"])) {
-	$estabelecimentoDao = new EstabelecimentoDao();
-	
-	$novoEstabelecimento = new Estabelecimento(
+$estabelecimentoDao = new EstabelecimentoDao();
+
+if (isset($_POST["btnCadastrar"]) || isset($_POST["btnSalvar"])) {
+	$estabelecimento = new Estabelecimento(
+		"",
 		$_POST["razaoSocial"], 
 		$_POST["nomeFantasia"], 
 		$_POST["cnpj"],
@@ -20,13 +21,27 @@ if (isset($_POST["btnCadastrar"])) {
 		$_POST["numero"],
 		$_POST["bairro"],
 		$_POST["cidade"],
+		$_POST["uf"],
 	);
 
-	$estabelecimentoDao->inserir($novoEstabelecimento);
-	
-	$_SESSION["estabelecimento"] = $estabelecimentoDao->login($_POST["email"], $_POST["senha"]);;
+	if (isset($_POST["btnCadastrar"])) {
+		$estabelecimentoDao->inserir($estabelecimento);
+		$_SESSION["estabelecimento"] = $estabelecimentoDao->login($_POST["email"], $_POST["senha"]);
+	}
+	if (isset($_POST["btnSalvar"])) {
+		$estabelecimentoDao->alterar($_SESSION["estabelecimento"]->getIdEstabelecimento(), $estabelecimento);
+		$_SESSION["estabelecimento"] = $estabelecimentoDao->login($_SESSION["estabelecimento"]->getEmail(), $_SESSION["estabelecimento"]->getSenha());
+	}
 
 	header('Location: /visao/administrativo/pedido.lista.php');
+}
+
+if (isset($_POST["btnExcluir"])) {
+	$idEstabelecimento = $_SESSION["estabelecimento"]->getIdEstabelecimento();
+
+	$estabelecimentoDao->excluir($idEstabelecimento);
+
+	header('Location: /index.php');
 }
 
 // var_dump($_POST);

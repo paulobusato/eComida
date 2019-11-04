@@ -7,9 +7,9 @@ abstract class Dao
 		return (Connection::obterConexao())->query($sql);
 	}
 	
-	public abstract function inserir($Objeto);
-	public abstract function alterar($Objeto);
-  	public abstract function excluir($Objeto);
+	public abstract function inserir($entidade);
+	public abstract function alterar($id, $entidade);
+  	public abstract function excluir($id);
   	public abstract function consultar($id);
 }
 ?>

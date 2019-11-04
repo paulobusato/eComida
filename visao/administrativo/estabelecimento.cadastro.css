@@ -100,7 +100,7 @@ body {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 320px 50px;
+    grid-template-rows: 380px 50px;
     padding: 64px;
     gap: 24px;
 }
@@ -132,13 +132,6 @@ body {
     grid-template-columns: 1fr 20px 1fr;
 }
 
-.action__cancelar {
-    justify-self: end;
-}
-
-.action__salvar {
-    grid-column: 3 / 4;
-}
 
 .btn-action {
     color: #087f23;
@@ -163,6 +156,22 @@ body {
     background-color: #087f23;
     color: #fff;
     border: 1px solid #087f23;
+}
+
+.action__excluir {
+    justify-self: end;
+    color: red;
+    border: 1px solid red;
+}
+
+.action__excluir:hover {
+    background-color: red;
+    color: #fff;
+    border: 1px solid red;
+}
+
+.action__salvar {
+    grid-column: 3 / 4;
 }
 
 .rodape {

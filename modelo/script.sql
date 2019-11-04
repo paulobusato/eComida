@@ -17,7 +17,8 @@ CREATE TABLE Estabelecimento (
     Logradouro VARCHAR(255) NOT NULL,
     Numero VARCHAR(20),
     Bairro VARCHAR(255) NOT NULL,
-    Cidade VARCHAR(255) NOT NULL
+    Cidade VARCHAR(255) NOT NULL,
+    UF VARCHAR(255) NOT NULL
 );
 
 DROP TABLE IF EXISTS Cliente;

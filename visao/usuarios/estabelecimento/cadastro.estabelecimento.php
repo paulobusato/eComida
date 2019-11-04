@@ -41,6 +41,7 @@
                 <input type="text" name="numero" placeholder="Numero">
                 <input type="text" name="bairro" placeholder="Bairro">
                 <input type="text" name="cidade" placeholder="Cidade">
+                <input type="text" name="uf" placeholder="UF">
             </section>
         </address>
         <section class="cadastro-navegacao">

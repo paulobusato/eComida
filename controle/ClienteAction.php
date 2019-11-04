@@ -24,7 +24,6 @@ if (isset($_POST["btnCadastrar"])) {
 
     $clienteDao->inserir($novoCliente);
 
-    $_SESSION["cliente"] = $clienteDao->
+    header('Location: /index.html');
 }
-
 ?>

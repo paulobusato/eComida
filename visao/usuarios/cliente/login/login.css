@@ -78,7 +78,6 @@ body {
   font-weight: bold;
   position: absolute;
   right: 1rem;
-  display: inline-flex;
   text-decoration: none;
   padding: 16px;
   line-height: 1.25em;
@@ -263,6 +262,10 @@ body {
   }
 
   .cabecalho-principal__navegacao__entrar {
+    display: inline-flex;
+  }
+
+  .cabecalho-principal__navegacao__estabelecimento {
     display: inline-flex;
   }
 
