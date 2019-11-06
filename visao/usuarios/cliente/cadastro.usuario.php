@@ -43,7 +43,7 @@
             </section>
         </address>
         <section class="cadastro-navegacao">
-            <a href="/visao/usuarios/login/login.php" class="btnCancelar">Cancelar</a>
+            <a href="/visao/usuarios/cliente/login/login.php" class="btnCancelar">Cancelar</a>
             <button type="submit" class="btnCadastrar" name="btnCadastrar">Confirmar</button>
         </section>
     </form>

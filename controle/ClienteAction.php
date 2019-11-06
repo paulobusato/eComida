@@ -24,6 +24,6 @@ if (isset($_POST["btnCadastrar"])) {
 
     $clienteDao->inserir($novoCliente);
 
-    header('Location: /index.html');
+    header('Location: /visao/estabelecimento/estabelecimento.lista/estabelecimento.lista.php');
 }
 ?>

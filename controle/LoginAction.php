@@ -12,7 +12,7 @@ if (isset($_POST["btnEntrarCliente"])) {
     $clienteDao = new ClienteDao();
     $cliente = $clienteDao->login($email, $senha);
     $_SESSION["cliente"] = $cliente;
-    header("Location: /index.php");
+    header('Location: /visao/estabelecimento/estabelecimento.lista/estabelecimento.lista.php');
 }
 
 if (isset($_POST["btnEntrarEstabelecimento"])) {
