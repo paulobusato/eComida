@@ -5,14 +5,19 @@
     z-index: 1100;
     background-color: #087f23;
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 12% auto 10% 25%;
     align-items: center;
     padding: 0 5%;
 }
 
-.voltar__icon {
+.voltar__icon, .login__icon {
     color: #fff;
     font-size: 36px;
+}
+
+.login-text {
+    color: #fff;
+    text-align: center;
 }
 
 .cabecalho__logo {
@@ -29,11 +34,15 @@
 @media only screen  and (min-width : 1224px) {    
     .cabecalho__navegacao {
         padding: 0 10%;
-        grid-template-columns: 5% auto 10%;
+        grid-template-columns: 5% auto 5% 10% 5%;
     }
     
     .voltar__link {
         display: none;
+    }
+
+    .login-text {
+        text-align: start;
     }
 
     .sacola-button {
