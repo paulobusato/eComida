@@ -32,7 +32,7 @@ class ClienteDao extends Dao
 
         if ($resultado->num_rows > 0) {
             $cliente = $resultado->fetch_array();
-            return new Cliente($cliente["nome"]);
+            return $cliente["nome"];
         }
     }
 

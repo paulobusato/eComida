@@ -10,8 +10,8 @@ $senha = $_POST['senha'];
 
 if (isset($_POST["btnEntrarCliente"])) {
     $clienteDao = new ClienteDao();
-    $cliente = $clienteDao->login($email, $senha);
-    $_SESSION["cliente"] = $cliente;
+    $nomeCliente = $clienteDao->login($email, $senha);
+    $_SESSION["nomeCliente"] = $nomeCliente;
     header('Location: /visao/estabelecimento/estabelecimento.lista/estabelecimento.lista.php');
 }
 
